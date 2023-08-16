@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Linq연습_Group" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1523.3333333333333,2199.3333333333335" sap2010:WorkflowViewState.IdRef="Linq연습_Group_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Linq연습_Group" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,2171" sap2010:WorkflowViewState.IdRef="Linq연습_Group_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -81,9 +81,10 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Linq연습_Group_Order" sap:VirtualizedContainerService.HintSize="558,2134.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Linq연습_Group_Order" sap:VirtualizedContainerService.HintSize="558,2106" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DT" />
       <Variable x:TypeArguments="sd:DataTable" Name="outDT" />
@@ -95,14 +96,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:BuildDataTable DataTable="[DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;City&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Berlin&lt;/City&gt;&#xA;    &lt;ZIP&gt;10115&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Frankfurt&lt;/City&gt;&#xA;    &lt;ZIP&gt;60306&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Stuttgart&lt;/City&gt;&#xA;    &lt;ZIP&gt;70173&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Mannheim&lt;/City&gt;&#xA;    &lt;ZIP&gt;68161&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Hamburg&lt;/City&gt;&#xA;    &lt;ZIP&gt;20095&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Berlin&lt;/City&gt;&#xA;    &lt;ZIP&gt;10243&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Frankfurt&lt;/City&gt;&#xA;    &lt;ZIP&gt;60306&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <Sequence DisplayName="Group_연습_Sequence" sap:VirtualizedContainerService.HintSize="496,628" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Group_연습_Sequence" sap:VirtualizedContainerService.HintSize="496,616" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="------Group-------" />
-      <Assign sap2010:Annotation.AnnotationText="a, b 둘의 조건으로 그룹을 했기때문에 둘다 같으면 합쳐지고 다르면 나누어진다." DisplayName="Assign_Group" sap:VirtualizedContainerService.HintSize="434,131.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="------Group-------" />
+      <Assign sap2010:Annotation.AnnotationText="a, b 둘의 조건으로 그룹을 했기때문에 둘다 같으면 합쳐지고 다르면 나누어진다." DisplayName="Assign_Group" sap:VirtualizedContainerService.HintSize="434,125" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
         </Assign.To>
@@ -117,18 +118,18 @@ Select grp.First).CopyToDataTable]</InArgument>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[strDT]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[strDT]" />
+      <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[strDT]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[strDT]" />
     </Sequence>
-    <Sequence DisplayName="Sequence_Order" sap:VirtualizedContainerService.HintSize="496,1256" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Sequence_Order" sap:VirtualizedContainerService.HintSize="496,1239" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:BuildDataTable DataTable="[DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;City&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Berlin&lt;/City&gt;&#xA;    &lt;ZIP&gt;10115&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Frankfurt&lt;/City&gt;&#xA;    &lt;ZIP&gt;60306&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Stuttgart&lt;/City&gt;&#xA;    &lt;ZIP&gt;70173&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Mannheim&lt;/City&gt;&#xA;    &lt;ZIP&gt;68161&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Hamburg&lt;/City&gt;&#xA;    &lt;ZIP&gt;20095&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Berlin&lt;/City&gt;&#xA;    &lt;ZIP&gt;10243&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City&gt;Frankfurt&lt;/City&gt;&#xA;    &lt;ZIP&gt;60306&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="----------Order----------" />
-      <Assign sap2010:Annotation.AnnotationText="이방식이면 null 이면 &quot;&quot;빈문자열이 노출된다." DisplayName="Assign_Order" sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="----------Order----------" />
+      <Assign sap2010:Annotation.AnnotationText="이방식이면 null 이면 &quot;&quot;빈문자열이 노출된다." DisplayName="Assign_Order" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
         </Assign.To>
@@ -144,18 +145,17 @@ Select row
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[strDT]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[strDT]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="-내림차순 Order-null표현안되게-where-+-" />
-      <Assign sap2010:Annotation.AnnotationText="이방식이면 null 이면 &quot;&quot;빈문자열이 노출된다." DisplayName="Assign_Order" sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[strDT]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[strDT]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="-내림차순 Order-null표현안되게-where-+-" />
+      <Assign sap2010:Annotation.AnnotationText="" DisplayName="Assign_Order" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(From row In DT
 Where Not row.IsNull("City")
-Order By row("City") Descending, row("ZIP") Descending '내림차순 "" 대신  String.Empty 가능
-Select row
+Order By row("City") Descending, row("ZIP") Descending '내림차순
 ).CopyToDataTable]</InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
@@ -164,8 +164,8 @@ Select row
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[strDT]" />
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[strDT]" />
+      <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[strDT]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[strDT]" />
     </Sequence>
   </Sequence>
 </Activity>

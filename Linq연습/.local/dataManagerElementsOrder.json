@@ -39,6 +39,79 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_Join.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NDT&Sequence_1",
+        "ZDT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1",
+        "outDT2&Sequence_1",
+        "outDTFull&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_테이블.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "outDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "시퀀스 - 복사 (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "QDT&Sequence_1",
+        "resultValue&Sequence_1",
+        "resultDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_more_group.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outDT&Sequence_1",
+        "DT&Sequence_1",
+        "strDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_Let_Function_Array.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_NumbersArray&Sequence_1",
+        "NumbersArray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_Let_Function_DT.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outDT&Sequence_1",
+        "DT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
