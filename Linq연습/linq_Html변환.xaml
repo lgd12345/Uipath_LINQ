@@ -1,0 +1,191 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="linq_Html변환" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,2069" sap2010:WorkflowViewState.IdRef="linq_Html변환_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="linq_Html변환" sap:VirtualizedContainerService.HintSize="546,2004" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+      <Variable x:TypeArguments="x:String" Name="strDT_HTML" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;text&lt;/Name&gt;&#xA;    &lt;Number&gt;1&lt;/Number&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;test2&lt;/Name&gt;&#xA;    &lt;Number&gt;2&lt;/Number&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Name&gt;test3&lt;/Name&gt;&#xA;    &lt;Number&gt;3&lt;/Number&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <Assign sap:VirtualizedContainerService.HintSize="484,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[strDT_HTML]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;table border=3&gt;&lt;tr&gt;&lt;td&gt;"+
+String.Join("&lt;/td&gt;&lt;td&gt;",DT.Columns.Cast(Of DataColumn).Select(Function(x) x.ColumnName).ToArray)+
+"&lt;/td&gt;&lt;/tr&gt;"+"&lt;tr&gt;"+String.Join("&lt;/tr&gt;&lt;tr&gt;",(From x In DT.AsEnumerable Let cells = "&lt;td&gt;"+
+String.Join("&lt;/td&gt;&lt;td&gt;",x.ItemArray)+
+"&lt;/td&gt;" Select cells).ToArray)+"&lt;/tr&gt;"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 제목 없음 - 메모장" sap:VirtualizedContainerService.HintSize="484,1670" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,1379" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="path">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">\linq_Html.html</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RichEditD2DPT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Text="[strDT_HTML]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 93, 1184, 540" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'RichEditD2DPT'" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="fedba086-90f6-40c7-a625-abc9aba73d2b" ImageBase64="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UgAAAACkBCkAAAAAUoIUAAAAAClBCgAAAICUIAUAAABASpACAAAAICVIAQAAAJASpAAAAABIHQWp2267bXUEAAAAAFuZBiVIAQAAAJARpAAAAABICVIAAAAApAQpAAAAAFKCFAAAAAApQQoAAACAlCAFAAAAQEqQAgAAACAlSAEAAACQEqQAAAAASAlSAAAAAKSWIPXGG28IUgAAAADsbhrUtChBCgAAAICEIAUAAABASpACAAAAICVIAQAAAJASpAAAAABICVIAAAAApAQpAAAAAFKCFAAAAAApQQoAAACAlCAFAAAAQEqQAgAAACA1Der8+fOCFAAAAAANQQoAAACAlCAFAAAAQEqQAgAAACAlSAEAAACQEqQAAAAASAlSAAAAAKSWIPX6668LUgAAAADsbhrUfBwlSAEAAACQEKQAAAAASAlSAAAAAKQEKQAAAABS06CmRQlSAAAAACSWIPXaa68dzpw5szoCAAAAgK1Mg5oWJUgBAAAAkBCkAAAAAEgJUgAAAACkBCkAAAAAUoIUAAAAAClBCgAAAICUIAUAAABASpACAAAAICVIAQAAAJASpAAAAABICVIAAAAApJYgde7cucOtt966OgIAAACArUyDmhYlSAEAAACQEKQAAAAASAlSAAAAAKQEKQAAAABSS5B69dVXBSkAAAAAdjcNalqUIAUAAABAQpACAAAAICVIAQAAAJASpAAAAABILUHq5ZdfPtxyyy2rIwAAAADYyjSoV155RZACAAAAoCFIAQAAAJASpAAAAABICVIAAAAApAQpAAAAAFJLkHrppZcEKQAAAAB2Nw1qPo4SpAAAAABICFIAAAAApAQpAAAAAFKCFAAAAACpoyB18803r44AAAAAYCvToKZFCVIAAAAAJAQpAAAAAFKCFAAAAAApQQoAAACAlCAFAAAAQGoJUi+++KIgBQAAAMDupkFNixKkAAAAAEgIUgAAAACkBCkAAAAAUoIUAAAAAKklSL3wwguHm266aXUEAAAAAFuZBjUtSpACAAAAICFIAQAAAJASpAAAAABICVIAAAAApAQpAAAAAFJLkHr++ecFKQAAAAB2Nw1qWpQgBQAAAEBCkAIAAAAgJUgBAAAAkBKkAAAAAEgtQeq555473HjjjasjAAAAANjKNKhpUYIUAAAAAImjIHXDDTesjgAAAABgK9OgBCkAAAAAMoIUAAAAAClBCgAAAICUIAUAAABAaglSzz77rCAFAAAAwO6mQU2LEqQAAAAASAhSAAAAAKQEKQAAAABSghQAAAAAqaMgdf3116+OAAAAAGAr06AEKQAAAAAyghQAAAAAKUEKAAAAgJQgBQAAAEBqCVLPPPOMIAUAAADA7qZBTYsSpAAAAABICFIAAAAApAQpAAAAAFKCFAAAAAApQQoAAACA1BKknn766cPp06dXRwAAAACwlWlQ06IEKQAAAAASghQAAAAAqaMg5T+kAAAAANjbNChBCgAAAIDMEqSeeuopQQoAAACA3U2DmhYlSAEAAACQEKQAAAAASAlSAAAAAKQEKQAAAABSghQAAAAAqSVIPfnkk4fTp0+vjgAAAABgK9OgpkUJUgAAAAAkBCkAAAAAUoIUAAAAAKmjIHXdddetjgAAAABgK9OgBCkAAAAAMoIUAAAAAClBCgAAAICUIAUAAABASpACAAAAICVIAQAAAJBagtQTTzxxuPbaa1dHAAAAALCVaVDTogQpAAAAABKCFAAAAAApQQoAAACAlCAFAAAAQGoJUo8//rggBQAAAMDupkFNixKkAAAAAEgIUgAAAACkBCkAAAAAUoIUAAAAAKklSD322GOHa665ZnUEAAAAAFuZBjUtSpACAAAAICFIAQAAAJASpAAAAABICVIAAAAApAQpAAAAAFJHQerqq69eHQEAAADAVpYg9eijjwpSAAAAAOxugtS0KEEKAAAAgIQgBQAAAEBKkAIAAAAgJUgBAAAAkBKkAAAAAEhNgxKkAAAAAMgIUgAAAACkBCkAAAAAUoIUAAAAAClBCgAAAIDUEqQeeeQRQQoAAACA3U2DmhYlSAEAAACQEKQAAAAASAlSAAAAAKQEKQAAAABSS5B6+OGHD6dOnVodAQAAAMBWpkFNixKkAAAAAEgIUgAAAACkBCkAAAAAUoIUAAAAAClBCgAAAIDUEqQeeughQQoAAACA3U2DmhYlSAEAAACQEKQAAAAASAlSAAAAAKQEKQAAAABSS5B68MEHD1ddddXqCAAAAAC2Mg1qWpQgBQAAAEBCkAIAAAAgJUgBAAAAkBKkAAAAAEgJUgAAAACkliD1wAMPCFIAAAAA7G4a1LQoQQoAAACAxFGQOnXq1OoIAAAAALYiSAEAAACQEqQAAAAASPkPKQAAAABSghQAAAAAKUEKAAAAgJQgBQAAAEBKkAIAAAAgtQSp+++/X5ACAAAAYHdXXnnlYVqUIAUAAABAQpACAAAAICVIAQAAAJA6ClJzWBsBAAAAwFYEKQAAAABSghQAAAAAqSVInT17VpACAAAAYHfToKZFCVIAAAAAJAQpAAAAAFKCFAAAAAApQQoAAACA1BKkTk5ODldcccXqCAAAAAC2Mg1qWpQgBQAAAEBCkAIAAAAgJUgBAAAAkPpJkPr8q6/Z2Rc/uPwMxL6Ev6a/AwDAn+wnQeqb7y+ys29/cPkZiHwHf23/BgCAP9n/gtTJ4T+kYxIc94oPXAAAAABJRU5ErkJggg==" InformativeScreenshot="2ee73dbb4a107ef055fcb88b0b4aec25.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='제목 없음 - 메모장' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '파일'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArgument="47" CvType="Text" DesignTimeRectangle="13, 52, 60, 40" DesignTimeScaleFactor="1.25" FriendlyName="'파일'" FullSelectorArgument="&lt;wnd cls='Windows.UI.Composition.DesktopWindowContentBridge' idx='4' title='DesktopWindowXamlSource' /&gt;&lt;wnd cls='Windows.UI.Input.InputSite.WindowClass' /&gt;&lt;ctrl name='파일' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Windows.UI.Composition.DesktopWindowContentBridge' title='DesktopWindowXamlSource' /&gt;&lt;wnd cls='Windows.UI.Input.InputSite.WindowClass' /&gt;&lt;ctrl name='파일' role='menu item' automationid='' check:text='파일' /&gt;" Guid="8d8b7f25-f7bc-41a0-879c-9fda8af248a0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAsCAYAAADVX77/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGASURBVGhD7ZpNjkRgEIadww36Bo7gCE7gCE7gAs7hAvYOYK9FIhJEYkfCqiYl6Qm6/I6eYaoWT3Ter1qqHh82lKIo4D+RZRmkaQpxHENVVdB1HTRNA23bktxaQBiGI3DoKIogSRKo67ofcFUAFXJCBFAhJ0QAFXJCBFAhJ0QAFXJCBFAhJ0QAFX4SVVXBcRxyDQmCAEzT7OsQTdP6+jzPR3WYGYYxyo7wYwHYyKvZJXzf7+vx95wAHP7xeIwGxkzX9bdhLyNgL0sC8MpblvWWowwU47rud3Y5AdjMtCFq2CUBuOZ5HrmG5x7+TwRcTYBt26SA6UBLAm59C1AN4bCvh98wmxNw64fgHgFDputzr8FhDXJrAdRAe2Ev4CwuKQDPg3Vr/PkOwOGoxuZ4Pp/98YwdQAk/wmk7YCsiYIOA29wCR8DGtwg4Y7gtiAAq/CRbBby2+RrTt8xefl3A1RABVMgJEUCFnBABVMgJEUCFnBABVMgJpSxL4IyCX1LypYMvOg9dy5j8F+wAAAAASUVORK5CYII=" InformativeScreenshot="8d04f752d798a5eb5b088ceb0217cca2.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='* - 메모장' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '다른 이름으로 저장'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="19, 172, 300, 36" DesignTimeScaleFactor="1.25" FriendlyName="'다른 이름으로 저장'" FullSelectorArgument="&lt;ctrl name='다른 이름으로 저장' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='다른 이름으로 저장' role='menu item' automationid='' check:text='다른 이름으로 저장' /&gt;" Guid="463e3784-14b2-4a7e-bf93-1fb169b7b070" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAoCAYAAAB5CaaxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVuSURBVHhe7Zq/UeRMEEcvDjIgBDIgBDxMEqDIAAePBMDEwcLDhgBw8DAxSAFLV2/r+qv+5npGI2nEam5/xiuk+duaVb8dif31/f09CCFEj0hgQohukcCEEN0igQkhukUCE0J0iwQmhOgWCUwI0S0SmBCiWyQwIUS3SGBCiG6RwIQQ3SKBCSG6ZS8COzo6Gl5fX8O6LXF2djbc3t6GdeJv+FyXrBf3RC/3htgGzQRGsnPz5fA3ZXqeMjaWQbuo/xjPz8/D6enpbozj4+Ph+vp6+Pr6+qtdSWCUp/HkiPr3QM3nkH6u6XrVrJONwV9/LsQYTQVWK5QWNymJMUdgj4+Pu/nv7+935x8fHzuZQdq2JLAaLCGjOg8xXF1dDScnJ7v2gFiZn3ijPh7aWb8xlqw7/UvrMVYPxJr73CQwMZWDEhi7LMSQJpmVp7Jg/LUFZkJlF/j29vZfOTFRh9SQa7RDnEILOdB/qcByXxbQIkZxWGxSYIxDmzGmCoxHR/pFMkAg6Xic5xKS8jSeHFF/YOdFfWmXRaxIjB1aVF/LFgTG9fJFkYujRYzisNiswMa+yefAmLkYTW6+rEZgUV0tPMbWjFGKu5alcjDZIvqoHqgvfW62nggbkfkdJ1iMxtJr3iI3NzfD09NTWLeEl5eX4fLyMqwrcXd3N5yfn8/quwUksD9Y8viyUhyUp+2n0kpg1DFODXMFZo+6/vEvmje3Xuwg/TWYxHw89hnMjXFN3t/fd4nu+fz8DNuWWCKwNAbkY3U1AmNu38fG822WQhw+xjVk7dmbwDzpDbtWQq4hsBpyY0x5hMyNAaU4W8EcFxcXu3iJO2oTXSvx0y96j8cOjHHtHypbFZjtUlJhIQQ7Rh4kr6+PmCswE4MvYxyLaY7A6O+vAWqvI4Lx0hj8fGvQ7Uv8OZBcuRhth+HLaLu2GGzeJS/x147TxIK4kFHufRxt0jhom/uZSsoWBVYjBlhbYPQrjV8bp6e1wOjLri6qW4uDEljpJX76iAOpGCzB5pJbH8TA/OnPKJBFaXdmpHG2BoHauy8kS3zRLozytYX/04wlNDsg/8gE1p5j/9hHWUlg7FZyc42JzwSWPmb6Nn4M2vp2Dw8P/zuHKJZSjEvkN5fNCIwb35J3DrWJgxjStgiN8lQWa4uhFcQZrUlE7WdkmFi99FmTaFfI+GPrxRojZtbbYjJZ8wUT9dkXJqeoLiVKXhOBL5srMBNTri/9qPc7Ko7Tc9+fY18PYxIqxWgxlPq3pqnA7IbMYdLyxz+N7cLSH7JGiV0SGOX+2kpE/deGeZfKF3khl/S/hVaHdLzExuakPTJEYn4HxzFlzMW4vs8+mfKSOyewtCyViKckB/C7vbQd52msafxrCwz8DpDjqE1LmglsCtzoJYGVxNECJIa0iIOkyb2jGRNYJD2PPXJGdWuzVGCsB9cXyctANn7XVJrTBBWts2GPp/v6cktpIbA0iVOJIARL+JSc6CwuLx/mJoaonZ3PFdicGBmDevpG9a04SIHVcsgCm0Npzpr1gn3EXYIkrNlJzBWYZ2x3k8KcNtaaAvNMjZH5p7SfigRWYC2B0Y/yuTCujT2XGplMhXFz6zVlB1ba9f00JGya5BH7EBjtty4wxp/SfioSWIG1BPavUhIY9PYOzCCpUzmAT/5ITC0Fls5v78Ns/FYCK8UHU2K0+e23amuwWYHRpobSOEsZE1gUT0TU/1+Eay0JDBBVL/+F9JDUJKPH11uygiU4x1MEViL6uYYfu5XAouuoxfc11pQX7EVgQgjRAglMCNEtEpgQolskMCFEt0hgQohukcCEEN0igQkhukUCE0J0iwQmhOgWCUwI0S0SmBCiU76H34skYQr/Uk8dAAAAAElFTkSuQmCC" InformativeScreenshot="79d1d6331e819d4223d4d14eb9dada1e.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='팝업 호스트' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '제목 없음'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Text="[path]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvTextArgument="AE|R 018" CvType="Text" DesignTimeRectangle="169, 454, 752, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'제목 없음'" FullSelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 이름:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="4547c5e3-46db-430b-84f5-fa765c8924cc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAvQAAAAaCAYAAADYDcjNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIySURBVHhe7dxNTuNAEAbQnIsDcQaOkWNwApYcAiHNAokdQkKs2MCuJ/6Jp2O3O3YyYqbCe1IpjmO327svpbY3D6+fCQAAiGnTfwIAAAEdBPrNzS+1KwAAiEKgLxQAAEQh0BcKAACiWBnon9P2LaW729329j09pY90XTzum+v2I6W393RV+u2EAgCAKCaB/ur+q/820gbmJYG+O6ZqbfhuAnvm6f55+nttzNH5e5Nx+gIAgCgqHfosvJf2HQn0h+dl1Zy3JtC3YTy/Tjf+QRivBPrrx+bOKn88Hl9G+wV6AADi+M8D/cxY42vPBvqXdLe7r+pcCvcAAABRVAJ9KQx/d6Bv5vCVttvS/hEdegAAfqD5QN8G9n5pS7+9tyTQV31bh74va+gBALhQs4F+eDj2oIO9pEM/rqabvuS4mTpzDf0pBQAAUcwE+n1wHy95qQX6wjKYoxYG/VGHfdJZnwT68+YCAABRFAN9253vA3K7PXTpT+nQxysAAIhiGujboJ535btud7eOfUGgb/cfs+aPQHPN8Xyy79XlNt1866ZzAQCAKEaBPgvsecgdwvtf6NCvPu/8QD+5n33NzAUAAKKYfSi2XP8q0PcTHPwJ9N1rKfPAn5dADwDAZQsS6Msd+mGtf/vQbGlMgR4AgMsWtEPfy1+pWQz1lXMHAj0AAHGtDPQ/owAAIAqBvlAAABCFQF8oAACI4iDQAwAAsQj0AAAQmEAPAACBbR5eP/tNAAAglpR+A5dC3MTdvhUvAAAAAElFTkSuQmCC" InformativeScreenshot="d1a5ce45a7e3b412ab35fe55f2b47361.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item '텍스트 문서(*.txt)'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="모든 파일 " ScopeIdentifier="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>텍스트 문서(*.txt)</x:String>
+                  <x:String xml:space="preserve">모든 파일 </x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable CvElementArea="163, 479, 785, 30" CvTextArea="169, 485, 117, 19" CvTextArgument="9AE R11(*.txt)" CvType="InputBox" DesignTimeRectangle="166, 482, 779, 28" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'텍스트 문서(*.txt)'" FullSelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 형식:' cls='ComboBox' /&gt;&lt;ctrl name='파일 형식:' role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='탐색 창' cls='DirectUIHWND' /&gt;&lt;wnd aaname='파일 형식:' cls='ComboBox' /&gt;&lt;ctrl name='파일 형식:' role='combo box' automationid='' /&gt;" Guid="fbdc33f7-92d7-407b-865a-285f6e32a933" InformativeScreenshot="f0a79e27b8be797d8f747bd24539eacb.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="318bc9a4-7e80-42b0-9ac1-8ed08c7e9e1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="691, 543, 112, 35" CvTextArea="721, 550, 50, 20" CvTextArgument="X8(S)" CvType="Button" DesignTimeRectangle="693, 545, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' check:text='unchecked' /&gt;" Guid="8c2c47de-dcda-42c5-90d2-60afe0b2c1c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAlCAYAAACeVr0yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKISURBVHhe7ZuxbtswEIb5Bn4eAXkDPwenduvSKekTRFu25i20pECLNg/QIigyqMiQrUFiwEuWFsbVd0pcHnknuyksk8QN3yCTlAB+/I8yQLnlcglG+ZjISjCRlZCIvLpdwNHZD5i9uwb39ruRGfP3N+Qo9sZEYgcUePLhDhaPv2G1WhkZgU5OL+9hdnKdyGQi5+c30F4+iDcx8uH44idVzdAdE4nRtSTmz+LxF6WSuWMXa5HSQCM/0BVzxy5MZDGYyEowkZVQvMi+bcD5TmwbpwPvPHRiW3nkK7Lz4JxT+CtAEkm/iePWNC301M9ETk/fQqNM+rZE6u3jImncRvoKOs8XhO+C34N+h6J6kfpEj4jEahBLZM/oofW8vWn7oH16yhBJZfYlIlEWJqiBttfa4va1pCa8xn7S+JDxdE9BESJJVjCZcZnTRG6SEiVsQJn8pO8uIg+fygJEDgnxXk6enEgcwwXHe54mUhISLyQRXABqZdg/+YvcJESe+FTkIFFMByvRusjnFxkGjcUKIKQYwX08Sf10ZC6SlzUpfXIid0ESOSwCUeQTz2U9WSgmUkNOVlz6torcJClCHLNdJEFv0VGpNZEy+ssDn+wxkZQeZXK1Nv25IbxSELZH/h+6SGGyd2mPhWDSovvTM6NFsNsC2B8Vi3xKnfJyoqdVSVtYlpNx0n47LVWLJP5pjxzYes+IQ6cRKV7kfhj5CxOhJ3taTGQlmMhKMJGVYCIrYVQknjK3c635g+daR0Xi6eXjiztxsJEPp1/u6RuQ0B0TeXX7QKnE7wssmfmBTvBzAXSErkJ3TCSCHeZn38C9/gTu1UcjI2ZvPsNR+zWRiCQijTIxkZVgIqtgCX8AwFxTF43s6e0AAAAASUVORK5CYII=" InformativeScreenshot="d31c07791e24bac35cfc37c02eff1af4.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="221, 271, 1200, 681" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATRSURBVFhHtdVbc1NVFAfwvvhQkyfvfgvEL6ADtFCsLaUVW7G0tQoqSkUooha8zvDikw/qkxUdZ4BhpEVAaJqUJFxaoWlD06ZJmmvTFrklqM/LtfY5+2SfuE+yT5Pumf9k5gSyf11rZaVG5TzS9+06TJJe9UfsWD2nY/We1fOKDn5YDgP0qj9ix+o5Hav3rJ7bOkcj/67D5DBwZP4f+jAjn8w9hI9nH8Lh2bzpef/MAzh4i3IfDgTvm977YOou9AXuwD6M+Hzvzdvw7g3KSu6dP1fUK0o4gg1gPg3/Dc7+H4wPJdjhUB4+CuXw+ffGcw77MHgP9k/fA4fwHsH2Td6B9yf/AsfBwnOEAcLg7YllinpFCTaAMMJRxXr9SYZsPDOJsDwcQlz/TA66x+IM2XD6BsIQhzDCUcV2uqMMWX9qgsHeu0m5De0j8wy58cR1xDEY7JlYgt3jS6BfX/5oMA3H28lhhxDWz1r5gFWMVU2Aie0UYXu1VrKK8artoSCMcG9dz6oDi2HUTgYrmjPezv1TGk6EcZwwZ2I7TbA3KdcW1YHinGkwc9WonWbYXdOccZi5av+HMRzCejFvXM2oA63aWTxnfUrtNM/Z7nEOyzJY71UN13PFBtDunBlVU5gz3k5etR5M95U0dPvT6sDScyZvZ7k5K24nwXp0WJc/Bbt8KXWgrJ3PfvGzsb8qzVOfHWdV6xJwnb6kOlA2Z7KLKokIe92LuZxQB8rm7JnPq1jBoz8xWCfBvAnYibjXLsfVgdWaM+3baZ6zXQYsyWAMh79IHRj9+vJHXBuW+8xibZhgkjnj7RRhHZ4FaMfo15c/8n1msTYk+4yvDRFmamcR7FV3DHZg9OvLHzs/T6XWRqGdhTnTcBym40Zj8MpoVB0ogz2Nq0E28KvJE/gl4VUjGKXNFVEHyuZMdlElEWGtI5R5daDs56mqFTwyyGActx1xLZdsAFc3Z8VrQz5nba5C1Qi2HWEtl8Kw7WJYHah9OyX7zGJtmGFxBhO/nbJ2irDmi3PQ/MecOlBlbZTaZxy2owyM4RDWhHn5wqw60Kqdsp8neTsLsOI5M6qmw5oQRrjG8yF1oGzOnsTVIBv41eTxgUHEFWAvUc7NqANlcya7qJI0XghpuHMh2Iq4ht9tAE3t1OesmhV8bOBHVjWCabhbsAWjX1/+2Pl5Kl4b5eaMt1OEbT4bhM3DQXUgwcRvp2xtlNpnfG0Yc2a00wzbQjBMPeLqhqfVgVZrg2B21oZszhjurFY1gtUjrG5oGjYNTakDS+2zcu0kmNjO4jnj7RRhG89QAurALqxeteeMtbMItonBpmDDbwHYOmyjgufHA9Dp4Ti7c1Zop2zOxKoRjOGGAnDS7VcHBoNB8Pl84PV6YWxszBSPxyON2+02Mjo6aorL5TIyMjJiCr1Pn+v32wAmo2FIp9OQTCaNJBIJI/F43MjCwoKRWCxmSjQaNRKJRKShf8f+b9jGov66/XnIJGKwsrICy8vLRpaWlkzJZrNGFhcXjWQyGVPoj+VJpVJG6A+n13hkFo51rFcHflNXC1+9WAtfvrD2oXuObaiF7xoeVQf+ss2RP97sgMGmtQ/dg/fBry2OvH59+XO6zfncyVZn7kSrE9Y6eA+canPm6E79euHU1PwHBiSQobPvwrkAAAAASUVORK5CYII=" InformativeScreenshot="9bc3a1dd217c3bb1422d71a1a0a10c99.png" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='제목 없음 - 메모장' /&gt;" Title="제목 없음 - 메모장" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

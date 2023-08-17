@@ -33,6 +33,54 @@
     },
     {
       "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.20.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\gdcom\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\htmlagilitypack\\1.11.38\\lib/netstandard2.0/HtmlAgilityPack.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\mailkit\\3.1.1\\lib/net6.0/MailKit.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.graph\\4.11.0\\lib/netstandard2.0/Microsoft.Graph.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.graph.core\\2.0.5\\lib/netstandard2.0/Microsoft.Graph.Core.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\mimekit\\3.1.1\\lib/net6.0/MimeKit.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.2\\lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\lib/net5.0/ConnectionClient.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Office.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3"
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "23.8.1-preview"
       },
@@ -117,52 +165,6 @@
     },
     {
       "Package": {
-        "Id": "UiPath.UIAutomation.Activities",
-        "Version": "23.6.2-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\nlog\\4.5.11\\lib/netstandard2.0/NLog.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath\\23.6.60.46509-preview\\lib/net6.0-windows7.0/UiPath.Interop.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.codedworkflows\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.contracts\\2.14.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.CV.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.dll"
-      ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview"
-    },
-    {
-      "Package": {
         "Id": "UiPath.Testing.Activities",
         "Version": "23.8.0-preview"
       },
@@ -178,58 +180,56 @@
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Api.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview"
     },
     {
       "Package": {
-        "Id": "UiPath.Mail.Activities",
-        "Version": "1.20.3"
+        "Id": "UiPath.UIAutomation.Activities",
+        "Version": "23.6.0-preview"
       },
       "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\htmlagilitypack\\1.11.38\\lib/netstandard2.0/HtmlAgilityPack.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\mailkit\\3.1.1\\lib/net6.0/MailKit.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.graph\\4.11.0\\lib/netstandard2.0/Microsoft.Graph.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.graph.core\\2.0.5\\lib/netstandard2.0/Microsoft.Graph.Core.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\mimekit\\3.1.1\\lib/net6.0/MimeKit.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.2\\lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\nlog\\4.5.11\\lib/netstandard2.0/NLog.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath\\23.6.60.46509-preview\\lib/net6.0-windows7.0/UiPath.Interop.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\lib/net5.0/ConnectionClient.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/Office.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.Mail.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\lib/net6.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.codedworkflows\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.contracts\\2.14.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.CV.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3"
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview"
     }
   ],
   "Conflicts": [],
@@ -4373,7 +4373,7 @@
     },
     "UiPath.OCR.Activities": {
       "Id": "UiPath.OCR.Activities",
-      "Version": "3.16.1-preview",
+      "Version": "3.15.1",
       "Dependencies": [
         {
           "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
@@ -4643,17 +4643,17 @@
     },
     "UiPath.UIAutomation.Activities": {
       "Id": "UiPath.UIAutomation.Activities",
-      "Version": "23.6.2-preview",
+      "Version": "23.6.0-preview",
       "Dependencies": [
         {
           "Item1": "UiPath.UIAutomation.Activities.Runtime",
-          "Item2": "[23.6.2-preview, 23.6.2-preview]"
+          "Item2": "[23.6.0-preview, 23.6.0-preview]"
         }
       ]
     },
     "UiPath.UIAutomation.Activities.Runtime": {
       "Id": "UiPath.UIAutomation.Activities.Runtime",
-      "Version": "23.6.2-preview",
+      "Version": "23.6.0-preview",
       "Dependencies": [
         {
           "Item1": "UiPath",
@@ -4673,7 +4673,7 @@
         },
         {
           "Item1": "UiPath.OCR.Activities",
-          "Item2": "[3.16.1-preview, )"
+          "Item2": "[3.15.1, )"
         },
         {
           "Item1": "UiPath.Platform",
@@ -7241,14 +7241,14 @@
     {
       "Package": {
         "Id": "UiPath.OCR.Activities",
-        "Version": "3.16.1-preview"
+        "Version": "3.15.1"
       },
       "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
       ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.16.1-preview"
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1"
     },
     {
       "Package": {
@@ -7312,43 +7312,43 @@
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Api.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities",
-        "Version": "23.6.2-preview"
+        "Version": "23.6.0-preview"
       },
       "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.Wizards.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.Contracts.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.Wizards.dll"
       ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.2-preview"
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview"
     },
     {
       "Package": {
         "Id": "UiPath.UIAutomation.Activities.Runtime",
-        "Version": "23.6.2-preview"
+        "Version": "23.6.0-preview"
       },
       "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
+        "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll"
       ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.2-preview"
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview"
     },
     {
       "Package": {

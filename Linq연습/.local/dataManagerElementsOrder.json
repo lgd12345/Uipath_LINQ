@@ -112,6 +112,18 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "linq_Html변환.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path&Sequence_2",
+        "DT&Sequence_1",
+        "strDT_HTML&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
