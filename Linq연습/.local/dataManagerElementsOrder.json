@@ -106,6 +106,7 @@
       "Path": "Linq연습_Let_Function_DT.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strDT&Sequence_1",
         "outDT&Sequence_1",
         "DT&Sequence_1"
       ],
@@ -120,6 +121,111 @@
         "path&Sequence_2",
         "DT&Sequence_1",
         "strDT_HTML&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_Average평균함수.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Out_AVG2&Sequence_2",
+        "strDT&Sequence_2",
+        "outDT&Sequence_2",
+        "DT&Sequence_2",
+        "Out_AVG&Sequence_1",
+        "Int_Arr&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq_동일한행RemoveRows.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1",
+        "Out_AVG2&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_TwoDataTable교칩합차집합합집합.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT2&Sequence_1",
+        "DT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_Get_File.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path&Sequence_1",
+        "file&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "시퀀스.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "QDT&Sequence_1",
+        "resultValue&Sequence_1",
+        "resultDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_if문.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1",
+        "NumbersArray&Sequence_1",
+        "out_NumbersArray&Sequence_1",
+        "outDT2&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_isnull.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ColumnName추출테이블만들기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outDT2&Sequence_1",
+        "DT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
