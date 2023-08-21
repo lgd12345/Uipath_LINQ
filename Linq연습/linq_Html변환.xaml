@@ -137,11 +137,7 @@ String.Join("&lt;/td&gt;&lt;td&gt;",DT.Columns.Cast(Of DataColumn).Select(Functi
           </ActivityAction.Argument>
           <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,1204" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="path">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:String">C:\Users\gdcom\Downloads\linq_Html.html</Literal>
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:String" Default="C:\Users\gdcom\Downloads\linq_Html.html" Name="path" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">

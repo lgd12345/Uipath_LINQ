@@ -67,7 +67,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "시퀀스 - 복사 (1).xaml",
+      "Path": "품목거래처데이터처리.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "DT&Sequence_1",
@@ -179,7 +179,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "시퀀스.xaml",
+      "Path": "품목거래처데이터처리하다가안함.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "DT&Sequence_1",
@@ -226,6 +226,20 @@
         "DT&Sequence_1",
         "outDT&Sequence_1",
         "strDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/Linq연습_Take.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDT&Sequence_8",
+        "DT&Sequence_1",
+        "Files&Sequence_1",
+        "Result&Sequence_1",
+        "NumArray&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
