@@ -244,6 +244,60 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/Linq연습_Skip.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Path&Sequence_1",
+        "Lines&Sequence_1",
+        "NumArray&Sequence_2",
+        "Result&Sequence_2",
+        "Files&Sequence_2",
+        "DT&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/WherePlus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "numArray&Sequence_1",
+        "numA&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/TakeWhile_SkipWhile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "OutDT&Sequence_3",
+        "strDT&Sequence_3",
+        "DT&Sequence_1",
+        "numA&Sequence_1",
+        "numArray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/SelectPlus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IEnumerable&Sequence_1",
+        "NumArray&Sequence_1",
+        "strDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "DT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

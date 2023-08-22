@@ -129,7 +129,7 @@
         <InArgument x:TypeArguments="sd:DataTable">[DT.Clone]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="486,125" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign sap2010:Annotation.AnnotationText="&#xA;" sap:VirtualizedContainerService.HintSize="486,125" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[resultDT]</OutArgument>
       </Assign.To>
