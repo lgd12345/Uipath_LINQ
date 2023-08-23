@@ -286,14 +286,28 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "추가_Mode/SelectPlus.xaml",
+      "Path": "추가_Mode/SelectPlus_and다양한쿼리짜기.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "CharArray&Sequence_15",
+        "StrArray&Sequence_1",
+        "IENUM&Sequence_1",
         "IEnumerable&Sequence_1",
         "NumArray&Sequence_1",
         "strDT&Sequence_1",
         "OutDT&Sequence_1",
         "DT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/Linq쿼리구문Plus_And_All.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isTrue&Sequence_1",
+        "ONum&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

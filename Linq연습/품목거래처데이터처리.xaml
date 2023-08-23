@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="시퀀스" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1395" sap2010:WorkflowViewState.IdRef="시퀀스_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="시퀀스" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1397" sap2010:WorkflowViewState.IdRef="시퀀스_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -95,7 +95,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="시퀀스" sap:VirtualizedContainerService.HintSize="548,1330" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="시퀀스" sap:VirtualizedContainerService.HintSize="548,1332" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DT" />
       <Variable x:TypeArguments="sd:DataTable" Name="QDT" />
@@ -129,7 +129,7 @@
         <InArgument x:TypeArguments="sd:DataTable">[DT.Clone]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="&#xA;" sap:VirtualizedContainerService.HintSize="486,125" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign sap2010:Annotation.AnnotationText="&#xA;" sap:VirtualizedContainerService.HintSize="486,127" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[resultDT]</OutArgument>
       </Assign.To>
@@ -140,7 +140,7 @@ Group Join rowQDT In QDT.AsEnumerable()
   On re Equals rowQDT(1) Into grp = Group
   From g In grp.DefaultIfEmpty
   Let a = If( g IsNot Nothing AndAlso re.ToString.Contains(g(1).ToString),g(0).ToString,re)
-  Select resultDT.Rows.Add(rowDT.ItemArray.Take(2).Concat({a}).Concat(rowDT.ItemArray.Skip(3)).ToArray())
+  Select resultDT.Rows.Add(rowDT.ItemArray.Take(2).Concat({a}).Concat(rowDT.ItemArray.Skip(3).Take(3)).ToArray())
 ).CopyToDataTable]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
