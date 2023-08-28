@@ -303,9 +303,13 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "추가_Mode/Linq쿼리구문Plus_And_All.xaml",
+      "Path": "추가_Mode/Linq쿼리구문Plus_All_Any.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "PArray2&Sequence_1",
+        "PArray&Sequence_1",
+        "AllStrNum&Sequence_1",
         "isTrue&Sequence_1",
         "ONum&Sequence_1"
       ],
