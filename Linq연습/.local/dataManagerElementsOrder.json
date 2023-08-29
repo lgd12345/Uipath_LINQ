@@ -303,15 +303,30 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "추가_Mode/Linq쿼리구문Plus_All_Any.xaml",
+      "Path": "추가_Mode/Linq쿼리구문Plus_All_Any_if문에서Any쓰기.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "OutDT&Sequence_1",
+        "strDT&Sequence_1",
         "DT&Sequence_1",
         "PArray2&Sequence_1",
         "PArray&Sequence_1",
         "AllStrNum&Sequence_1",
         "isTrue&Sequence_1",
         "ONum&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/Linq연습_TwoDataTable비교Plus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "New_DT&Sequence_1",
+        "Old_DT&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
