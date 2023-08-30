@@ -331,6 +331,31 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/요소연산자_ElementAt_Operator_ElementAtOrDefault.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StrDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "DT&Sequence_1",
+        "IntArray&Sequence_1",
+        "Out_Int&Sequence_1",
+        "OutArray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/요소연산자_First_FirstOrDefault.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outInt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

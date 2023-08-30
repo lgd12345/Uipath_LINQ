@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Linq연습_TwoDataTable비교Plus" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1605" sap2010:WorkflowViewState.IdRef="Linq연습_TwoDataTable비교Plus_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Linq연습_TwoDataTable비교Plus" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1652" sap2010:WorkflowViewState.IdRef="Linq연습_TwoDataTable비교Plus_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -85,9 +85,11 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Linq연습_TwoDataTable비교Plus" sap:VirtualizedContainerService.HintSize="594,1540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Linq연습_TwoDataTable비교Plus" sap:VirtualizedContainerService.HintSize="594,1587" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Old_DT" />
       <Variable x:TypeArguments="sd:DataTable" Name="New_DT" />
@@ -100,9 +102,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment DisplayName="주석" sap:VirtualizedContainerService.HintSize="532,75" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Old_DT에 없는 New_DT의 데이터를 OutDT에 저장하라" />
-    <ui:BuildDataTable DataTable="[Old_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;EmployeeID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;1&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;하나&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;111&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;2&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;둘&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;222&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;3&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;셋&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;333&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;4&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;넷&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;444&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;7&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;칠&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;777&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;9&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;구&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;999&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:BuildDataTable DataTable="[New_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;EmployeeID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;1&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;하나&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;111&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;2&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;둘&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;222&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;3&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;셋&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;333&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;4&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;넷&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;444&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;7&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;칠&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;777&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;9&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;구&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;999&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[Old_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;EmployeeID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;1&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;하나&lt;/Name&gt;&#xA;    &lt;ZIP&gt;111&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;2&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;둘&lt;/Name&gt;&#xA;    &lt;ZIP&gt;222&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;3&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;셋&lt;/Name&gt;&#xA;    &lt;ZIP&gt;333&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;4&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;넷&lt;/Name&gt;&#xA;    &lt;ZIP&gt;444&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;7&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;칠&lt;/Name&gt;&#xA;    &lt;ZIP&gt;777&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;9&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;구&lt;/Name&gt;&#xA;    &lt;ZIP&gt;999&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:BuildDataTable DataTable="[New_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;EmployeeID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;1&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;하나&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;111&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;2&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;둘&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;222&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;3&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;셋&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;333&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;4&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;넷&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;444&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;7&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;칠&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;777&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;9&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;구&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;999&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;5&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;오&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;555&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;8&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;팔&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;888&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;EmployeeID&gt;6&lt;/EmployeeID&gt;&#xD;&#xA;    &lt;Name&gt;육&lt;/Name&gt;&#xD;&#xA;    &lt;ZIP&gt;666&lt;/ZIP&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[New_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="532,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;EmployeeID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ZIP&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;1&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;하나&lt;/Name&gt;&#xA;    &lt;ZIP&gt;111&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;2&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;둘&lt;/Name&gt;&#xA;    &lt;ZIP&gt;222&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;3&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;셋&lt;/Name&gt;&#xA;    &lt;ZIP&gt;333&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;4&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;넷&lt;/Name&gt;&#xA;    &lt;ZIP&gt;444&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;7&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;칠&lt;/Name&gt;&#xA;    &lt;ZIP&gt;777&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;EmployeeID&gt;9&lt;/EmployeeID&gt;&#xA;    &lt;Name&gt;구&lt;/Name&gt;&#xA;    &lt;ZIP&gt;999&lt;/ZIP&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
     <Assign sap:VirtualizedContainerService.HintSize="532,82" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[OutDT]</OutArgument>
@@ -111,26 +113,14 @@
         <InArgument x:TypeArguments="sd:DataTable">[New_DT.Clone]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,519" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="496,440" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="496,317" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_1">
-            <Assign.To>
-              <OutArgument x:TypeArguments="sd:DataTable">[OutDT]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
-From row In New_DT
-Let exists = Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
-Select If(exists,Old_DT.Rows.Add({}),row) '없는 행을 넣어야 하니까 있으면(True) 빈행추가 없으면 행을 추가
-).CopyToDataTable.AsEnumerable.Where(Function(w) Not String.IsNullOrEmpty(w("EmployeeID").ToString)).CopyToDataTable]</InArgument>
-            </Assign.Value>
-          </Assign>
           <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_6">
             <Assign.To>
               <OutArgument x:TypeArguments="sd:DataTable">[OutDT]</OutArgument>
@@ -144,41 +134,82 @@ Select row
 ).CopyToDataTable]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_8">
             <Assign.To>
               <OutArgument x:TypeArguments="sd:DataTable">[OutDT]</OutArgument>
             </Assign.To>
             <Assign.Value>
               <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
 From row In New_DT
-Let exists = Not Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
-Where exists
-Select row
-).CopyToDataTable]</InArgument>
+Let exists = Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
+Select If(exists,Old_DT.Rows.Add({}),row) '없는 행을 넣어야 하니까 있으면(True) 빈행추가 없으면 행을 추가
+).CopyToDataTable.AsEnumerable.Where(Function(w) Not String.IsNullOrEmpty(w("EmployeeID").ToString)).CopyToDataTable]</InArgument>
             </Assign.Value>
           </Assign>
         </Sequence>
       </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign sap:VirtualizedContainerService.HintSize="532,83" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <ui:CommentOut DisplayName="Filter Data Table 안 쓰려면 Comment Out" sap:VirtualizedContainerService.HintSize="532,273" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="496,194" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[OutDT]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[If(
+(From row In New_DT
+Let exists = Not Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
+Where exists
+Select row
+).Any(),(From row In New_DT
+Let exists = Not Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
+Where exists
+Select row).CopyToDataTable,New_DT.Clone)]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <Assign sap:VirtualizedContainerService.HintSize="532,83" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[OutDT]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[If(
-(From row In New_DT
-Let exists = Not Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
-Where exists
-Select OutDT.Rows.Add(row.ItemArray)
-).Any(),OutDT,New_DT.Clone)]</InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
+From row In New_DT
+Let exists = Old_DT.AsEnumerable.Any(Function(x) x("EmployeeID").ToString = row("EmployeeID").ToString)
+Select If(exists,Old_DT.Rows.Add({}),row) '없는 행을 넣어야 하니까 있으면(True) 빈행추가 없으면 행을 추가
+).CopyToDataTable]</InArgument>
       </Assign.Value>
     </Assign>
+    <ui:FilterDataTable DataTable="[OutDT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="532,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[OutDT]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["EmployeeID"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
     <ui:OutputDataTable DataTable="[OutDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="532,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[strDT]" />
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="532,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strDT]" />
   </Sequence>
