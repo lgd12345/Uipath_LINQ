@@ -351,7 +351,32 @@
       "Path": "추가_Mode/요소연산자_First_FirstOrDefault.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "File&Sequence_1",
+        "FolderPath&Sequence_1",
         "outInt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/Transpose_DataTable_Dictionary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "XDict&Sequence_1",
+        "strDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "DT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/요소연산자_Last_LastOrDefault.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outint&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
