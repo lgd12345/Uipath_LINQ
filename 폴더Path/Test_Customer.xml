@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Customers>
+	<Customer ID="1">
+		<Name>Daimler</Name>
+		<City>
+			<CityName>Berlin</CityName>
+			<Zip>1111</Zip>
+		</City>
+	</Customer>
+	<Customer ID="2">
+		<Name>maunich</Name>
+		<City>
+			<CityName>Busan</CityName>
+			<Zip>2222</Zip>
+		</City>
+	</Customer>
+	<Customer ID="3">
+		<Name>con</Name>
+		<City>
+			<CityName>wolfsburg</CityName>
+			<Zip>3333</Zip>
+		</City>
+	</Customer>
+</Customers>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List>
+	<Order ID="1">
+		<Price>11.99</Price>
+	</Order>
+	<Order ID="2">
+		<Price>22.99</Price>
+	</Order>
+	<Order ID="3">
+		<Price>33.99</Price>
+	</Order>
+	<Sale ID="1">
+		<Price>555.99</Price>
+	</Sale>
+	<Sale ID="2">
+		<Price>666.99</Price>
+	</Sale>
+	<Sale ID="3">
+		<Price>777.99</Price>
+	</Sale>
+</List>

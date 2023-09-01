@@ -381,6 +381,55 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_xml.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "xDoc&Sequence_1",
+        "names&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_xml_Plus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "AttributeCollection&Sequence_1",
+        "ElementCollection&Sequence_1",
+        "XPrice&Sequence_1",
+        "XDoc&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq연습_xml_plus2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StrDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "XEle&Sequence_1",
+        "XDoc&Sequence_1",
+        "ElementCollection&Sequence_1",
+        "AttributeCollection&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/요소연산자_Single_SingleOrDefault.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "num&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
