@@ -430,6 +430,33 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/DefaultIfEmpty_Operator.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NewRow&Sequence_1",
+        "StrDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "LastDT&Sequence_1",
+        "FirstDT&Sequence_1",
+        "DT&Sequence_1",
+        "RowIndex&Sequence_1",
+        "ResultNumber&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/TakeLast연산자_PartitoningOperators.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "OutArray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
