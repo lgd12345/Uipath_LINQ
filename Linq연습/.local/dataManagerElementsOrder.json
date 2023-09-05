@@ -452,7 +452,60 @@
       "Path": "추가_Mode/TakeLast연산자_PartitoningOperators.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "OutArray&Sequence_1",
+        "outArray2&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/SkipLast연산자_PartitioningOperators.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDT&Sequence_1",
+        "OutDT&Sequence_1",
+        "DT&Sequence_1",
         "OutArray&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Linq_Dictionary.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT&Sequence_1",
+        "outDT&Sequence_1",
+        "strDT&Sequence_1",
+        "Dict&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/필터연산자_SequenceEqual.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StrDT&Sequence_1",
+        "DT&Sequence_1",
+        "Array1&Sequence_1",
+        "Array2&Sequence_1",
+        "result&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/필터연산자_OfType.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Array&Sequence_1",
+        "InArray&Sequence_1",
+        "INTArray&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
