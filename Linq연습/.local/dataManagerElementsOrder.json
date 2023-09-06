@@ -510,6 +510,30 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/Range_Operator.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "outIntList&Sequence_1",
+        "outIntArray&Sequence_1",
+        "counter&Sequence_1",
+        "outInt&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "추가_Mode/PrimeNumbers_Range사용.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isPrimeNumber&Sequence_1",
+        "Number&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
