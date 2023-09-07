@@ -1,0 +1,216 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="First_Last_WorkingDay" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,2215" sap2010:WorkflowViewState.IdRef="First_Last_WorkingDay_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="First_Last_WorkingDay" sap:VirtualizedContainerService.HintSize="496,2150" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="Month" />
+      <Variable x:TypeArguments="x:Int32" Name="Year" />
+      <Variable x:TypeArguments="s:DateTime" Name="StartDate" />
+      <Variable x:TypeArguments="s:DateTime" Name="EndDate" />
+      <Variable x:TypeArguments="s:DateTime[]" Name="AllMonthDays" />
+      <Variable x:TypeArguments="s:DateTime" Name="FirstWorkingDay" />
+      <Variable x:TypeArguments="s:DateTime" Name="LastWorkingDay" />
+      <Variable x:TypeArguments="x:Int32" Name="TotalWorkingDay" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap2010:Annotation.AnnotationText="해당년 지정&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[Year]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">2023</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap2010:Annotation.AnnotationText="해당월 지정&#xA;" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[Month]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[StartDate]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[New Date(year, Month,1)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap2010:Annotation.AnnotationText="Date.DaysInMonth(Year,Month) 지정한 날의 수를 반환한다." sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[EndDate]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[New Date(year, Month,Date.DaysInMonth(Year,Month))]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[StartDate.ToString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="***********************" />
+    <Assign sap2010:Annotation.AnnotationText="StartDate.AddDays(0)&#xD;&#xA;StartDate.AddDays(1)&#xD;&#xA;StartDate.AddDays(2)&#xD;&#xA;..." sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime[]">[AllMonthDays]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime[]">[Enumerable.Range(0, (EndDate - StartDate).Days + 1).Select(Function(x) StartDate.AddDays(x)).ToArray]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap2010:Annotation.AnnotationText="주말이 아닌 날의 첫번째 날&#xD;&#xA;&#xD;&#xA;여기서 AndAlso Not Holidays.Contains(d) 이런식으로 Holidays라는 변수에 휴일 Api를 가져와서 담아두고 사용해도 된다.&#xD;&#xA;&#xD;&#xA;세번째영업일 ex) Skip(2).First()" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[FirstWorkingDay]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime" xml:space="preserve">[(
+From d In AllMonthDays
+Where d.DayOfWeek &lt;&gt; DayOfWeek.Saturday AndAlso d.DayOfWeek &lt;&gt; DayOfWeek.Sunday
+Select d
+).First()]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap2010:Annotation.AnnotationText="주말이 아닌 날의 마지막째 날" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[LastWorkingDay]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime" xml:space="preserve">[(
+From d In AllMonthDays
+Where d.DayOfWeek &lt;&gt; DayOfWeek.Saturday AndAlso d.DayOfWeek &lt;&gt; DayOfWeek.Sunday
+Select d
+).Last()]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[TotalWorkingDay]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32" xml:space="preserve">[(
+From d In AllMonthDays
+Where d.DayOfWeek &lt;&gt; DayOfWeek.Saturday AndAlso d.DayOfWeek &lt;&gt; DayOfWeek.Sunday
+Select d
+).Count()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[String.Join(Environment.NewLine,AllMonthDays)]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;FirstWorkingDay : &quot; + FirstWorkingDay.ToShortDateString +&quot;. Day : &quot; + FirstWorkingDay.DayOfWeek.ToString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;LastWorkingDay : &quot; + LastWorkingDay.ToShortDateString +&quot;. Day : &quot; + LastWorkingDay.DayOfWeek.ToString]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;TotalWorkingDay&quot;+TotalWorkingDay.ToString]" />
+  </Sequence>
+</Activity>

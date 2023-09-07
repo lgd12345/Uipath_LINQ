@@ -158,10 +158,10 @@
       "Path": "Linq연습_TwoDataTable교칩합차집합합집합.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "DT2&Sequence_1",
         "DT&Sequence_1",
         "outDT&Sequence_1",
-        "strDT&Sequence_1"
+        "strDT&Sequence_1",
+        "DT2&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -512,7 +512,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "추가_Mode/Range_Operator.xaml",
+      "Path": "계산과함수/Range_Operator.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "outIntList&Sequence_1",
@@ -525,11 +525,47 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "추가_Mode/PrimeNumbers_Range사용.xaml",
+      "Path": "계산과함수/PrimeNumbers소수_Range사용.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "NumberArray&Sequence_1",
+        "strout&Sequence_1",
         "isPrimeNumber&Sequence_1",
         "Number&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "계산과함수/First_Last_WorkingDay.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TotalWorkingDay&Sequence_1",
+        "LastWorkingDay&Sequence_1",
+        "FirstWorkingDay&Sequence_1",
+        "AllMonthDays&Sequence_1",
+        "EndDate&Sequence_1",
+        "StartDate&Sequence_1",
+        "Year&Sequence_1",
+        "Month&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "사원부서관리시퀀스.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PUTSheetname&Sequence_1",
+        "PUTDT&Sequence_1",
+        "NewDepCol&Sequence_1",
+        "EMPDT&Sequence_1",
+        "EMPSheetname&Sequence_1",
+        "Sheetname&Sequence_1",
+        "outDT&Sequence_1",
+        "DepDT&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

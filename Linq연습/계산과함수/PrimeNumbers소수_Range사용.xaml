@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="PrimeNumbers_Range사용" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,821" sap2010:WorkflowViewState.IdRef="PrimeNumbers_Range사용_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="PrimeNumbers_Range사용" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1336" sap2010:WorkflowViewState.IdRef="PrimeNumbers_Range사용_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -67,32 +67,29 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PrimeNumbers_Range사용" sap:VirtualizedContainerService.HintSize="496,517" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="PrimeNumbers_Range사용" sap:VirtualizedContainerService.HintSize="496,1271" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="Number" />
       <Variable x:TypeArguments="x:Boolean" Name="isPrimeNumber" />
+      <Variable x:TypeArguments="x:String" Name="strout" />
+      <Variable x:TypeArguments="s:Int32[]" Name="NumberArray" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="1이나 음수(-) 값을 저장하게 되면 오류가 난다&#xD;&#xA;소수는 음수가 될 수 없으며 1 보다 커야한다.&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[Number]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:Int32">5</InArgument>
-      </Assign.Value>
-    </Assign>
-    <Assign sap2010:Annotation.AnnotationText="5 Mod 2&#xD;&#xA;5 Mod 3&#xD;&#xA;5 Mod 4&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="Assign_2">
-      <Assign.To>
-        <OutArgument x:TypeArguments="x:Boolean">[isPrimeNumber]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="x:Boolean">[Enumerable.Range(2,Number-2).All(Function(x) Number Mod x &lt;&gt; 0)]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -100,6 +97,46 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[isPrimeNumber.ToString]" />
+    <Assign sap2010:Annotation.AnnotationText="5 Mod 2&#xA;5 Mod 3&#xA;5 Mod 4&#xD;&#xA;&#xD;&#xA;음수나 1이 들어가서 계산 되 지 않게 하기 위해 if 문을 추가합니다.&#xA;" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[isPrimeNumber]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">[If(Number &gt; 1,Enumerable.Range(2,Number-2).All(Function(x) Number Mod x &lt;&gt; 0),False)]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[isPrimeNumber.ToString +&quot; &quot;+Number.ToString+ if(isPrimeNumber,&quot;는 음수다.&quot;,&quot;는 음수가 아니다.&quot;)]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="특정범위내의 소수를 얻는 법 2-500사이" />
+    <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[NumberArray]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]" xml:space="preserve">[(
+From n In Enumerable.Range(2,499)
+Where If(n &gt; 1, Enumerable.Range(2, n-2).All(Function(x) n Mod x &lt;&gt; 0), False)
+Select n
+).ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[String.Join(&quot; &quot;,NumberArray)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:Int32[]">[NumberArray]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:Int32[]" xml:space="preserve">[(
+From n In Enumerable.Range(2,499)
+Where If(n &gt; 1, Enumerable.Range(2, CInt(Math.Sqrt(n))-1).All(Function(x) n Mod x &lt;&gt; 0), False)
+Select n
+).ToArray]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[String.Join(&quot; &quot;,NumberArray)]" />
   </Sequence>
 </Activity>
