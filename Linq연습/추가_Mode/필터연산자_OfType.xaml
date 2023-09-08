@@ -75,14 +75,10 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OfType" sap:VirtualizedContainerService.HintSize="496,706" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OfType" sap:VirtualizedContainerService.HintSize="496,708" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:Int32[]" Name="INTArray" />
-      <Variable x:TypeArguments="s:Object[]" Name="InArray">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="s:Object[]" ExpressionText="New Object(8){1,&quot;a&quot;,True,&quot;2&quot;,3,False,&quot;xxX&quot;,3,Now}" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="s:Object[]" Default="[New Object(8){1,&quot;a&quot;,True,&quot;2&quot;,3,False,&quot;xxX&quot;,3,Now}]" Name="InArray" />
       <Variable x:TypeArguments="s:Object[]" Name="Array" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -90,8 +86,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[string.Join(Environment.NewLine, InArray)]" />
-    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[string.Join(Environment.NewLine, InArray)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:Int32[]">[INTArray]</OutArgument>
       </Assign.To>
@@ -99,8 +95,8 @@
         <InArgument x:TypeArguments="s:Int32[]">[InArray.OfType(Of Integer).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Join(&quot; &quot;,INTArray)]" />
-    <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[String.Join(&quot; &quot;,INTArray)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="433.6,83.2" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="s:Object[]">[Array]</OutArgument>
       </Assign.To>
@@ -112,6 +108,6 @@ Select s
 ).Distinct.ToArray]</InArgument>
       </Assign.Value>
     </Assign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[String.Join(&quot; &quot;,Array)]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[String.Join(&quot; &quot;,Array)]" />
   </Sequence>
 </Activity>

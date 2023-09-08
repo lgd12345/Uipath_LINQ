@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Linq연습_Skip" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1164.8" sap2010:WorkflowViewState.IdRef="Linq연습_Skip_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Linq연습_Skip" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1154" sap2010:WorkflowViewState.IdRef="Linq연습_Skip_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -88,9 +88,10 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="skip: 지정된 요소의 수를 무시할 수 있다.&#xA;" DisplayName="Linq연습_Skip" sap:VirtualizedContainerService.HintSize="558.4,1100" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="skip: 지정된 요소의 수를 무시할 수 있다.&#xA;" DisplayName="Linq연습_Skip" sap:VirtualizedContainerService.HintSize="558,1089" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="Lines" />
       <Variable x:TypeArguments="x:String" Default="D:\UipathLINQ연습\폴더Path\This is line.txt" Name="Path" />
@@ -101,7 +102,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Array_2보다많은것중뒤에것4개가져오기" sap:VirtualizedContainerService.HintSize="496,83.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Array_2보다많은것중뒤에것4개가져오기" sap:VirtualizedContainerService.HintSize="496,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:Int32[]" Default="[{1,2,3,4,5,6,7,8,9,10}]" Name="NumArray" />
         <Variable x:TypeArguments="s:Int32[]" Name="Result" />
@@ -145,14 +146,14 @@ Select n
         </ui:ForEach.Body>
       </ui:ForEach>
     </Sequence>
-    <Sequence DisplayName="메모장의 글 읽기 8줄 뛰어넘고 2줄만 출력에서 숫자만 정규식으로 빼서 *2" sap:VirtualizedContainerService.HintSize="496,820.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="메모장의 글 읽기 8줄 뛰어넘고 2줄만 출력에서 숫자만 정규식으로 빼서 *2" sap:VirtualizedContainerService.HintSize="496,815" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="메모장글읽기" />
-      <Assign sap2010:Annotation.AnnotationText="'0번째아이템에저장되는이유는라인하나당숫자가하나밖에없어서이다.&#xA;만악 line 의 문자가 i am 999 line 333이면 999는 index=0 333은 index = 1이 된다. &#xA;Let y 에서 값을 정수로 가져온 후 *2를 해주게 된다.&#xA;" sap:VirtualizedContainerService.HintSize="433.6,170.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="메모장글읽기" />
+      <Assign sap2010:Annotation.AnnotationText="'0번째아이템에저장되는이유는라인하나당숫자가하나밖에없어서이다.&#xA;만악 line 의 문자가 i am 999 line 333이면 999는 index=0 333은 index = 1이 된다. &#xA;Let y 에서 값을 정수로 가져온 후 *2를 해주게 된다.&#xA;" sap:VirtualizedContainerService.HintSize="434,170" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:List(x:String)">[Lines]</OutArgument>
         </Assign.To>
@@ -170,19 +171,19 @@ Select y
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,368" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Lines]">
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,364" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[Lines]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:String">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:String" Name="Line" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="377.6,180" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="376,178" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[Line.ToString]" />
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[Line.ToString]" />
             </Sequence>
           </ActivityAction>
         </ui:ForEach.Body>

@@ -558,6 +558,10 @@
       "Path": "사원부서관리시퀀스.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "wb_사원정보&Sequence_1",
+        "strDT&Sequence_1",
+        "Path_Folder&Sequence_1",
+        "path_EMPFile&Sequence_1",
         "PUTSheetname&Sequence_1",
         "PUTDT&Sequence_1",
         "NewDepCol&Sequence_1",
