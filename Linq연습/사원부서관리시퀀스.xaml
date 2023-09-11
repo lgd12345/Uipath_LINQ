@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="시퀀스" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,3526" sap2010:WorkflowViewState.IdRef="시퀀스_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="시퀀스" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,4944" sap2010:WorkflowViewState.IdRef="시퀀스_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -104,7 +104,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="사원부서관리시퀀스" sap:VirtualizedContainerService.HintSize="642,3461" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="사원부서관리시퀀스" sap:VirtualizedContainerService.HintSize="642,4879" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DepDT" />
       <Variable x:TypeArguments="sd:DataTable" Name="outDT" />
@@ -118,6 +118,11 @@
       <Variable x:TypeArguments="x:String" Name="strDT" />
       <Variable x:TypeArguments="x:String" Name="Path_Folder" />
       <Variable x:TypeArguments="x:String" Name="path_EMPFile" />
+      <Variable x:TypeArguments="x:String" Name="str_NoData" />
+      <Variable x:TypeArguments="x:String" Name="str_OneP" />
+      <Variable x:TypeArguments="x:String" Name="str_EmpN" />
+      <Variable x:TypeArguments="x:String" Name="NumDayIn" />
+      <Variable x:TypeArguments="sd:DataTable" Name="resultDT" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -206,7 +211,7 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="580,401" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="D:\UipathLINQ연습\사원정보1\사원별투입일수.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="580,401" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" WorkbookPath="D:\UipathLINQ연습\사원정보1\사원별투입일수.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -247,8 +252,62 @@
         <InArgument x:TypeArguments="x:String">신부서명</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="[NewDepCol]" DataTable="[outDT]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="580,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-    <Assign sap:VirtualizedContainerService.HintSize="580,83" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap:VirtualizedContainerService.HintSize="580,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[resultDT]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[outDT.Clone()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="[NewDepCol]" DataTable="[resultDT]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="580,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+    <Sequence sap2010:Annotation.AnnotationText="이렇게까지 변수지정은 안함&#xD;&#xA;이유는 보기 힘들어서" DisplayName="변수Sequence" sap:VirtualizedContainerService.HintSize="580,347" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423,194" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[str_NoData]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">자료없음</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[str_OneP]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">일당</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[str_EmpN]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">사원번호</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[NumDayIn]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">투입일수</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+    </Sequence>
+    <Assign sap2010:Annotation.AnnotationText="투입일수 평균과 월지급액 그리고 자료없음입력" sap:VirtualizedContainerService.HintSize="580,114" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
       </Assign.To>
@@ -266,8 +325,69 @@ Let pay = If(a &lt;&gt; 0 AndAlso CInt(rowemp("일당")) &lt;&gt; 0,b,CObj("자�
 Select outDT.Rows.Add({CObj(str_a)}.Concat(rowemp.ItemArray.Skip(1).Take(3)).Concat({CObj(put)}).Concat(rowemp.ItemArray.Skip(5).Take(1)).Concat({CObj(pay)}).ToArray())
 ).CopyToDataTable]</InArgument>
       </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="이거 쓰면 안되는 문서암호화되고 뭐 이러면 안되는 경우가 있으니까 엑셀을 아예열어버려서 시작하는 게 필요함 밑에 처럼&#xD;&#xA;" DataTable="[outDT]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="580,188" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" WorkbookPath="1.input\사원정보1.xlsx">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="580,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;신부서명입력&quot;]" />
+    <Assign sap2010:Annotation.AnnotationText="부서명을 토대로 신부서명적기" sap:VirtualizedContainerService.HintSize="580,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
+From rowout In OutDT.AsEnumerable()
+Group Join rowdep In DepDT.AsEnumerable()
+On rowout("부서명").ToString Equals rowdep("부서명").ToString Into grp = Group
+From g In grp.DefaultIfEmpty
+Let a = If(g IsNot Nothing AndAlso rowout("부서명").ToString.Contains(g("부서명").ToString),g("신부서명"),Nothing)
+Select resultDT.Rows.Add(rowout.ItemArray.Take(7).Concat({CObj(a)}).ToArray())
+	).CopyToDataTable]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </Assign>
     <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="580,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[strDT]" />
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[outDT]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="580,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" WorkbookPath="1.input\사원정보1.xlsx" />
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="이런식으로 해줘야함 밑에 save따로 해주는 이유는 원래 있는 거 (변경내용저장)쓰면 느려서&#xD;&#xA;" AutoSave="False" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="580,431" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" Visible="False" WorkbookPath="1.input\사원정보1.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,264" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[resultDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet3">
+              <ui:ExcelWriteRange.StartingCell>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelWriteRange.StartingCell>
+            </ui:ExcelWriteRange>
+            <ui:ExcelSaveWorkbook DisplayName="Save Workbook" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="ExcelSaveWorkbook_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ExcelApplicationScope>
   </Sequence>
 </Activity>
