@@ -1,0 +1,17 @@
+{
+	"studentId": "1001",
+	"name": "John Doe",
+	"age": 18,
+	"isStudent": true,
+	"address": {
+		"street": "123 Elm St",
+		"city": "Springfield",
+		"zip": "12345"
+	},
+	"subjects": ["Math","Chemistry","History"],
+	"grades": {
+		"Math" : "A",
+		"Chemistry": "B+",
+		"History": "A-"
+	}
+}

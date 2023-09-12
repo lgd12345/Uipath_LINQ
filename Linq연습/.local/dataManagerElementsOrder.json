@@ -587,6 +587,45 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "사원부서관리시퀀스 - 복사 (2).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DepDT&Sequence_1",
+        "outDT&Sequence_1",
+        "Sheetname&Sequence_1",
+        "EMPSheetname&Sequence_1",
+        "EMPDT&Sequence_1",
+        "NewDepCol&Sequence_1",
+        "PUTDT&Sequence_1",
+        "PUTSheetname&Sequence_1",
+        "wb_사원정보&Sequence_1",
+        "strDT&Sequence_1",
+        "Path_Folder&Sequence_1",
+        "path_EMPFile&Sequence_1",
+        "str_NoData&Sequence_1",
+        "str_OneP&Sequence_1",
+        "str_EmpN&Sequence_1",
+        "NumDayIn&Sequence_1",
+        "resultDT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Json사용하기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JsonArray&Sequence_1",
+        "JsonObject&Sequence_1",
+        "JsonContent&Sequence_1",
+        "filePath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
