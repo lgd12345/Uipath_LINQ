@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Json사용하기" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1714" sap2010:WorkflowViewState.IdRef="Json사용하기_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Json사용하기Array" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,1424" sap2010:WorkflowViewState.IdRef="Json사용하기Array_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,13 +25,13 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>Newtonsoft.Json.Linq</x:String>
       <x:String>Newtonsoft.Json</x:String>
       <x:String>System.Dynamic</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -57,13 +57,11 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
       <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
@@ -73,6 +71,8 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Collections.Specialized</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.Console</AssemblyReference>
@@ -80,71 +80,58 @@
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Json사용하기" sap:VirtualizedContainerService.HintSize="548,1649" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Json사용하기Array" sap:VirtualizedContainerService.HintSize="496,1359" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="filePath" />
-      <Variable x:TypeArguments="x:String" Name="JsonContent" />
       <Variable x:TypeArguments="njl:JObject" Name="JsonObject" />
       <Variable x:TypeArguments="njl:JArray" Name="JsonArray" />
+      <Variable x:TypeArguments="x:String" Name="JsonContent" />
+      <Variable x:TypeArguments="x:String" Name="filePath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Json이 문자열이므로 구문분석 메소드를 사용한다." />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="파일을 읽지 않고 파일에서 직접 데이터를 가져오려면 Load메서드를 사용.." />
-    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">D:\UipathLINQ연습\폴더Path\StudentsObject.json</InArgument>
+        <InArgument x:TypeArguments="x:String">["D:\UipathLINQ연습\폴더Path\PersonArray.json"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ReadTextFile File="{x:Null}" Content="[JsonContent]" DisplayName="Read Text File" FileName="[filePath]" sap:VirtualizedContainerService.HintSize="486,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_2">
-      <Assign.To>
-        <OutArgument x:TypeArguments="njl:JObject">[JsonObject]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="njl:JObject">[JObject.Parse(JsonContent)]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[&quot;Json형식의 객체 얻기&quot; + JsonObject(&quot;name&quot;).ToString]" />
-    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <ui:ReadTextFile File="{x:Null}" Content="[JsonContent]" DisplayName="Read Text File" FileName="[filePath]" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="njl:JArray">[JsonArray]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="njl:JArray">[JArray.Parse(JsonObject("subjects").ToString)]</InArgument>
+        <InArgument x:TypeArguments="njl:JArray">[JArray.Parse(JsonContent)]</InArgument>
       </Assign.Value>
     </Assign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[String.Join(&quot; | &quot; , JsonArray)]" />
-    <Assign sap:VirtualizedContainerService.HintSize="486,82" sap2010:WorkflowViewState.IdRef="Assign_4">
-      <Assign.To>
-        <OutArgument x:TypeArguments="njl:JObject">[JsonObject]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="njl:JObject">[JObject.Parse(JsonObject("address").ToString)]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[&quot;객체안의 객체 얻기&quot; + JsonObject(&quot;street&quot;).ToString]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,280" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_2">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[CType(JsonObject(&quot;address&quot;), JObject).ToString]" />
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
+    <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,884" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[JsonArray]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="njl:JToken">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="njl:JToken" Name="Item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="376,698" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="배열 안의 객체들" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[CType(Item, JObject).ToString]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;배열 안의 객체중 이름 : &quot;+Item(&quot;name&quot;).ToString]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;배열 안의 객체중 나이&quot;+Item(&quot;age&quot;).ToString]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="*******************************************" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
   </Sequence>
 </Activity>
