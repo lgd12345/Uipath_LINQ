@@ -558,6 +558,7 @@
       "Path": "사원부서관리시퀀스.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Wb_사원정보1&Sequence_1",
         "resultDT&Sequence_1",
         "NumDayIn&Sequence_1",
         "str_EmpN&Sequence_1",
@@ -645,6 +646,19 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "filePath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Json사용하기Create.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "filePath&Sequence_1",
+        "JsonStr&Sequence_1",
+        "Address&Sequence_1",
+        "JsonObject&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

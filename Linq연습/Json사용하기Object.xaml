@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Json사용하기" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,2138" sap2010:WorkflowViewState.IdRef="Json사용하기_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Json사용하기" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1236,2153" sap2010:WorkflowViewState.IdRef="Json사용하기_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -84,7 +84,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Json사용하기" sap:VirtualizedContainerService.HintSize="594,2073" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Json사용하기" sap:VirtualizedContainerService.HintSize="594,2088" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="filePath" />
       <Variable x:TypeArguments="x:String" Name="JsonContent" />
@@ -115,15 +115,15 @@
         <InArgument x:TypeArguments="njl:JObject">[JObject.Parse(JsonContent)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,314" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="532,329" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="496,235" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="496,250" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap2010:Annotation.AnnotationText="파일에서 직접데이터 가져오는 방법&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign sap2010:Annotation.AnnotationText="같은 방식 다른 클래스 사용 문자열을 JObject로 변환&#xA;DeserializeObject 클래스는 JObject 또는 JArray로 변환 하는 구문분석메서드와 같다" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="Assign_5">
             <Assign.To>
               <OutArgument x:TypeArguments="njl:JObject">[JsonObject]</OutArgument>
             </Assign.To>

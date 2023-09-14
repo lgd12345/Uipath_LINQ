@@ -80,7 +80,7 @@
         <InArgument x:TypeArguments="x:String">["D:\UipathLINQ연습\폴더Path\PersonArray.json"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,355" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+    <ui:CommentOut DisplayName="문자열로 읽지 않고 직접파일 읽기 Comment Out" sap:VirtualizedContainerService.HintSize="486,355" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
         <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,276" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
@@ -88,11 +88,9 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using reader As StreamReader = New StreamReader(filePath) 'StreamReader로 파일 정의&#xD;&#xA;&#x9;Using jsonReader As Newtonsoft.Json.JsonTextReader = New Newtonsoft.Json.JsonTextReader(reader) 'JsonTextReader로 파일 읽기&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Dim jsonArray As Newtonsoft.Json.Linq.JArray = Newtonsoft.Json.Linq.JArray.Load(jsonReader)  'Load로 JArray형태로 가져옴&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;For Each item As Newtonsoft.Json.Linq.JObject In jsonArray&#xD;&#xA;&#x9;&#x9;'Dim JsonObject = CType(Item, Newtonsoft.Json.Linq.JObject)&#xD;&#xA;&#x9;&#x9;'System.Console.WriteLine(JsonObject.ToString)&#xD;&#xA;&#x9;&#x9;System.Console.WriteLine(item.ToString)&#xD;&#xA;&#x9;&#x9;System.Console.WriteLine(&quot;이름 : &quot;+item(&quot;name&quot;).ToString)&#xD;&#xA;&#x9;Next&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;End Using&#xD;&#xA;End Using" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using reader As StreamReader = New StreamReader(filePath) 'StreamReader로 파일 정의&#xA;&#x9;Using jsonReader As Newtonsoft.Json.JsonTextReader = New Newtonsoft.Json.JsonTextReader(reader) 'JsonTextReader로 파일 읽기&#xA;&#x9;&#xA;&#x9;Dim jsonArray As Newtonsoft.Json.Linq.JArray = Newtonsoft.Json.Linq.JArray.Load(jsonReader)  'Load로 JArray형태로 가져옴&#xA;&#x9;&#xA;&#x9;For Each item As Newtonsoft.Json.Linq.JObject In jsonArray&#xA;&#x9;&#x9;'Dim JsonObject = CType(Item, Newtonsoft.Json.Linq.JObject)&#xA;&#x9;&#x9;'System.Console.WriteLine(JsonObject.ToString)&#xA;&#x9;&#x9;System.Console.WriteLine(item.ToString)&#xA;&#x9;&#x9;System.Console.WriteLine(&quot;이름 : &quot;+item(&quot;name&quot;).ToString)&#xA;&#x9;Next&#xA;&#x9;&#xA;&#x9;End Using&#xA;End Using" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
             <ui:InvokeCode.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="filePath">
-                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="filePath" />
-              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="filePath">[filePath]</InArgument>
             </ui:InvokeCode.Arguments>
           </ui:InvokeCode>
         </Sequence>
@@ -106,7 +104,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim JsonContent As String = File.ReadAllText(filePath) ' 파일 내용을 문자열로 읽음&#xD;&#xA;Dim jsonArray As Newtonsoft.Json.Linq.JArray = Newtonsoft.Json.JsonConvert.DeserializeObject(Of Newtonsoft.Json.Linq.JArray)(JsonContent)&#xD;&#xA;&#xD;&#xA;For Each item As Newtonsoft.Json.Linq.JObject In jsonArray&#xD;&#xA;    System.Console.WriteLine(item.ToString())&#xD;&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim JsonContent As String = File.ReadAllText(filePath) ' 파일 내용을 문자열로 읽음&#xA;Dim jsonArray As Newtonsoft.Json.Linq.JArray = Newtonsoft.Json.JsonConvert.DeserializeObject(Of Newtonsoft.Json.Linq.JArray)(JsonContent)&#xA;&#xA;For Each item As Newtonsoft.Json.Linq.JObject In jsonArray&#xA;    System.Console.WriteLine(item.ToString())&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
             <ui:InvokeCode.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="filePath">[filePath]</InArgument>
             </ui:InvokeCode.Arguments>
@@ -122,7 +120,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using fileStream As FileStream = File.OpenRead(filePath)&#xD;&#xA;    Using reader As New StreamReader(fileStream)&#xD;&#xA;        Using jsonReader As New  Newtonsoft.Json.JsonTextReader(reader)&#xD;&#xA;            Dim serializer As New  Newtonsoft.Json.JsonSerializer()&#xD;&#xA;&#xD;&#xA;            While jsonReader.Read()&#xD;&#xA;                If jsonReader.TokenType =  Newtonsoft.Json.JsonToken.StartObject Then&#xD;&#xA;                    Dim item As Object = serializer.Deserialize(jsonReader, GetType(Newtonsoft.Json.Linq.JObject))&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;System.Console.WriteLine(item.ToString())&#xD;&#xA;                End If&#xD;&#xA;            End While&#xD;&#xA;        End Using&#xD;&#xA;    End Using&#xD;&#xA;End Using" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using fileStream As FileStream = File.OpenRead(filePath)&#xA;    Using reader As New StreamReader(fileStream)&#xA;        Using jsonReader As New  Newtonsoft.Json.JsonTextReader(reader)&#xA;            Dim serializer As New  Newtonsoft.Json.JsonSerializer()&#xA;&#xA;            While jsonReader.Read()&#xA;                If jsonReader.TokenType =  Newtonsoft.Json.JsonToken.StartObject Then&#xA;                    Dim item As Object = serializer.Deserialize(jsonReader, GetType(Newtonsoft.Json.Linq.JObject))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;System.Console.WriteLine(item.ToString())&#xA;                End If&#xA;            End While&#xA;        End Using&#xA;    End Using&#xA;End Using" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
             <ui:InvokeCode.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="filePath">[filePath]</InArgument>
             </ui:InvokeCode.Arguments>
