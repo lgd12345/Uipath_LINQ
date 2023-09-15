@@ -1,0 +1,5 @@
+Function SumTwoNumbers (Num1 As Integer, Num2 As Integer) As Integer
+
+SumTwoNumbers = Num1 + Num2
+
+End Function

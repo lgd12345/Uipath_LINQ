@@ -558,6 +558,8 @@
       "Path": "사원부서관리시퀀스.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "wb_resultDT&Sequence_1",
+        "LastRowCnt&Sequence_1",
         "Wb_사원정보1&Sequence_1",
         "resultDT&Sequence_1",
         "NumDayIn&Sequence_1",
@@ -659,6 +661,20 @@
         "JsonStr&Sequence_1",
         "Address&Sequence_1",
         "JsonObject&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "VBA사용하기1실습1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Result&Sequence_1",
+        "num2&Sequence_1",
+        "num1&Sequence_1",
+        "TextFilePath&Sequence_1",
+        "filePath&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
