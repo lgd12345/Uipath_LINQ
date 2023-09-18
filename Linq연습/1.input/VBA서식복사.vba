@@ -1,5 +1,7 @@
-Sub SortExcelSheets()
-'값을 반환 안 할 것이고 입력 매개변수가 없다.Sub쓴다
+Option Explicit '명시적선언
+
+Sub SortExcel()
+'값을 반환 안 할 것이고 입력 매개변수가 없다.Sub
 
 Application.ScreenUpdating = False
 

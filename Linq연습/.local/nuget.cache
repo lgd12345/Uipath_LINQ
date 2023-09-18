@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4VGLunE7sWyIdr69SotwH53GDVEJc3fUHl1cAr0kBu2OqLn+EAkRfQVL9pCqxT3nIPjETIzl1pLVijwsXibuYw==",
+  "dgSpecHash": "HalTqsrDiomtVASr4D5X2pvyhlFBSDBnaMIzQNuMDKE7dF7MhyS89qOzvRxvjAAb19xuAepmwjSAdv4h9SLPqw==",
   "success": true,
   "projectFilePath": "D:\\UipathLINQ연습\\Linq연습\\.local\\",
   "expectedPackageFiles": [
@@ -262,7 +262,7 @@
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.codedworkflows\\23.6.0-preview\\uipath.codedworkflows.23.6.0-preview.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\uipath.connectionclient.1.4.3-20221214.2.nupkg.sha512",
-    "C:\\Users\\gdcom\\.nuget\\packages\\uipath.excel.activities\\2.22.0-preview\\uipath.excel.activities.2.22.0-preview.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\uipath.excel.activities\\2.22.1-preview\\uipath.excel.activities.2.22.1-preview.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.mail.activities\\1.20.3\\uipath.mail.activities.1.20.3.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.ocr.activities\\3.15.1\\uipath.ocr.activities.3.15.1.nupkg.sha512",
@@ -270,7 +270,7 @@
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.platform\\23.8.0-alpha.4168429\\uipath.platform.23.8.0-alpha.4168429.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.system.activities\\23.8.1-preview\\uipath.system.activities.23.8.1-preview.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.system.activities.runtime.windows\\23.8.1-preview\\uipath.system.activities.runtime.windows.23.8.1-preview.nupkg.sha512",
-    "C:\\Users\\gdcom\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\uipath.telemetry.client.1.6.69.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.testing.activities\\23.8.0-preview\\uipath.testing.activities.23.8.0-preview.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities\\23.6.0-preview\\uipath.uiautomation.activities.23.6.0-preview.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.6.0-preview\\uipath.uiautomation.activities.runtime.23.6.0-preview.nupkg.sha512",

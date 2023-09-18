@@ -4127,7 +4127,7 @@
           "lib/net5.0/ConnectionClient.dll": {}
         }
       },
-      "UiPath.Excel.Activities/2.22.0-preview": {
+      "UiPath.Excel.Activities/2.22.1-preview": {
         "type": "package",
         "dependencies": {
           "ClosedXML": "0.95.4",
@@ -4138,7 +4138,7 @@
           "SharpZipLib": "1.3.3",
           "System.Text.Encoding.CodePages": "6.0.0",
           "UiPath.Platform": "23.4.1",
-          "UiPath.Telemetry.Client": "1.5.3"
+          "UiPath.Telemetry.Client": "1.6.69"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -4745,7 +4745,7 @@
           }
         }
       },
-      "UiPath.Telemetry.Client/1.5.3": {
+      "UiPath.Telemetry.Client/1.6.69": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -9312,7 +9312,7 @@
           "lib/net5.0/ConnectionClient.dll": {}
         }
       },
-      "UiPath.Excel.Activities/2.22.0-preview": {
+      "UiPath.Excel.Activities/2.22.1-preview": {
         "type": "package",
         "dependencies": {
           "ClosedXML": "0.95.4",
@@ -9323,7 +9323,7 @@
           "SharpZipLib": "1.3.3",
           "System.Text.Encoding.CodePages": "6.0.0",
           "UiPath.Platform": "23.4.1",
-          "UiPath.Telemetry.Client": "1.5.3"
+          "UiPath.Telemetry.Client": "1.6.69"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -9930,7 +9930,7 @@
           }
         }
       },
-      "UiPath.Telemetry.Client/1.5.3": {
+      "UiPath.Telemetry.Client/1.6.69": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -19281,10 +19281,10 @@
         "uipath.connectionclient.nuspec"
       ]
     },
-    "UiPath.Excel.Activities/2.22.0-preview": {
-      "sha512": "mukqia0Pm/PpV1u9c+azPR+Humhd2MFjRvV0uKDVaC4/GamzLfLoQmAoDppsJ0DrapLcS1tLeSyAlsihr/OJ/w==",
+    "UiPath.Excel.Activities/2.22.1-preview": {
+      "sha512": "F2YWTdeP/Sn/0iGluCWJ91YNEXBqaJ5+RSFrFXn+ayMFn5xtyenwL1VnHyQca3RdnAZxyknNi5YLpPk6rB61sg==",
       "type": "package",
-      "path": "uipath.excel.activities/2.22.0-preview",
+      "path": "uipath.excel.activities/2.22.1-preview",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -19401,7 +19401,7 @@
         "lib/net6.0/zh-CN/UiPath.Excel.resources.dll",
         "lib/net6.0/zh-TW/UiPath.Excel.Activities.resources.dll",
         "lib/net6.0/zh-TW/UiPath.Excel.resources.dll",
-        "uipath.excel.activities.2.22.0-preview.nupkg.sha512",
+        "uipath.excel.activities.2.22.1-preview.nupkg.sha512",
         "uipath.excel.activities.nuspec"
       ]
     },
@@ -20143,17 +20143,17 @@
         "uipath.system.activities.runtime.windows.nuspec"
       ]
     },
-    "UiPath.Telemetry.Client/1.5.3": {
-      "sha512": "voH5VhBF+xnecfzkaaxQPKyoSfUFqvYhYp2XpLbxE6boX2fXvwpQHM1li94d+WLu20ayT+5Vb/frLpjd6nMQsA==",
+    "UiPath.Telemetry.Client/1.6.69": {
+      "sha512": "WVZS1Uo7WVXOacqE1RXcrbvYhpYOzw+6QYfyEvGpTHm3hQe658DSCMK6Pk/Fxfp6nLq26okg1kd0/ycBfhf3sw==",
       "type": "package",
-      "path": "uipath.telemetry.client/1.5.3",
+      "path": "uipath.telemetry.client/1.6.69",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "UI_icon.png",
         "lib/net461/TelemetryClient.dll",
         "lib/netstandard2.0/TelemetryClient.dll",
-        "uipath.telemetry.client.1.5.3.nupkg.sha512",
+        "uipath.telemetry.client.1.6.69.nupkg.sha512",
         "uipath.telemetry.client.nuspec"
       ]
     },
@@ -20960,7 +20960,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
-      "UiPath.Excel.Activities >= 2.22.0-preview <= 2.22.0-preview",
+      "UiPath.Excel.Activities >= 2.22.1-preview <= 2.22.1-preview",
       "UiPath.Mail.Activities >= 1.20.3 <= 1.20.3",
       "UiPath.System.Activities >= 23.8.1-preview <= 23.8.1-preview",
       "UiPath.Testing.Activities >= 23.8.0-preview <= 23.8.0-preview",
@@ -20984,7 +20984,7 @@
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[2.22.0-preview, 2.22.0-preview]"
+            "version": "[2.22.1-preview, 2.22.1-preview]"
           },
           "UiPath.Mail.Activities": {
             "include": "Runtime",
