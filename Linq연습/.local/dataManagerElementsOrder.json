@@ -744,6 +744,7 @@
       "Path": "사원부서관리시퀀스_VBA로해보기.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "aaaaa&Sequence_7",
         "vba_filePath&Sequence_1",
         "DepDT&Sequence_1",
         "outDT&Sequence_1",
