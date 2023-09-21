@@ -6,7 +6,7 @@ Public Sub SortCopyPasteExcel()
 Dim copyCol As Range
 Dim pasteCol As Range
 
-Dim RowCnt As Long
+Dim RowCnt As Long   'RowCnt 이부분을 파라미터로 변수로 집어넣으면 좋다. 왜냐하면 이 vba에서만 쓰일 게 아닐 수 있으니까
 
 Application.ScreenUpdating = False '엑셀의 화면 업데이트를 비활성화 코드빠르게실행
 
