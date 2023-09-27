@@ -788,6 +788,29 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Json사용하기_RESTAPI호출하기2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "request&Sequence_1",
+        "result&Sequence_3",
+        "reader&Sequence_3",
+        "dataStream&Sequence_1",
+        "response&Sequence_1",
+        "str_Wind&Sequence_1",
+        "str_Humidity&Sequence_1",
+        "str_Sky&Sequence_1",
+        "str_Tempeature&Sequence_1",
+        "city&Sequence_1",
+        "DTWeather&Sequence_1",
+        "DTResult&Sequence_1",
+        "Path&Sequence_1",
+        "targetURL&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
