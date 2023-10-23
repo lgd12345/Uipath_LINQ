@@ -817,6 +817,7 @@
       "Path": "Json사용하기_RESTAPI호출하기3HttpClient.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "variable1&Sequence_1",
         "result&Sequence_1",
         "Client&Sequence_1",
         "targetURL&Sequence_1",
@@ -829,6 +830,27 @@
         "str_Humidity&Sequence_1",
         "str_Wind&Sequence_1",
         "response&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Json사용하기_RESTAPI호출하기4비동기HttpClient.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "targetURL&Sequence_1",
+        "Path&Sequence_1",
+        "DTResult&Sequence_1",
+        "DTWeather&Sequence_1",
+        "city&Sequence_1",
+        "Client&Sequence_1",
+        "str_Tempeature&Sequence_1",
+        "str_Sky&Sequence_1",
+        "str_Humidity&Sequence_1",
+        "str_Wind&Sequence_1",
+        "response&Sequence_1",
+        "result&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
