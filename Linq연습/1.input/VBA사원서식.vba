@@ -1,4 +1,4 @@
-'Option Explicit '명시적선언함 각 변수의 타입에 대한 정의가 되어있어야함
+'Option Explicit '명시적선언함 각 변수의 타입에 대한 정의가 되어있어야함 'uipath에서는쓰니까오류남
 
 Public Sub SortCopyPasteExcel()
 
