@@ -11,7 +11,38 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "MyObj&Sequence_2",
+        "OutResult&Sequence_2",
+        "입력숫자2&Sequence_1",
+        "입력숫자1&Sequence_1",
+        "JavaObj&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "java1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JavaObj&Sequence_2",
+        "OutResult&Sequence_2",
+        "MyObj&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "javamain.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JavaMainObj&Sequence_2",
+        "OutResult&Sequence_2",
+        "RankObj&Sequence_2",
+        "MyObj&Sequence_2"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
