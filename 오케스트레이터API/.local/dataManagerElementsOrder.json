@@ -12,8 +12,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "MyFolders&Sequence_2",
-        "OdataResp&Sequence_2",
+        "MyFolders&Sequence_1",
+        "OdataResp&Sequence_1",
         "RespHdr&Sequence_1",
         "Resp&Sequence_1",
         "StatusCode&Sequence_1"

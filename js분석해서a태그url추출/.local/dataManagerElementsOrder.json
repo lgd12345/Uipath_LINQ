@@ -1,0 +1,87 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "docuGateUrl&Sequence_5",
+        "DOCU_GATE_API_URL&Sequence_5",
+        "fileExt&Sequence_5",
+        "filePath&Sequence_5",
+        "fileOriginName&Sequence_5",
+        "fileBlank&Sequence_5",
+        "a&Sequence_5",
+        "aaa&Sequence_3",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "괄호로substring.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "endIdx&Sequence_3",
+        "startIdx&Sequence_3",
+        "a&Sequence_3",
+        "fileBlank&Sequence_3",
+        "filePath&Sequence_3",
+        "fileOriginName&Sequence_3",
+        "fileExt&Sequence_3",
+        "DOCU_GATE_API_URL&Sequence_3",
+        "docuGateUrl&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "괄호로substring - 복사 (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "url&Sequence_3",
+        "Browser1&Sequence_1",
+        "re&Sequence_3",
+        "a&Sequence_3",
+        "fileBlank&Sequence_3",
+        "filePath&Sequence_3",
+        "fileOriginName&Sequence_3",
+        "fileExt&Sequence_3",
+        "DOCU_GATE_API_URL&Sequence_3",
+        "docuGateUrl&Sequence_3",
+        "startIdx&Sequence_3",
+        "endIdx&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "괄호로substring - 복사 (2).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "a&Sequence_3",
+        "fileBlank&Sequence_3",
+        "filePath&Sequence_3",
+        "fileOriginName&Sequence_3",
+        "fileExt&Sequence_3",
+        "DOCU_GATE_API_URL&Sequence_3",
+        "docuGateUrl&Sequence_3",
+        "startIdx&Sequence_3",
+        "endIdx&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2570.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>js분석해서a태그url추출.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="643.2,2505.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 기업마당&gt;활용정보&gt;기업업무용 서식" sap:VirtualizedContainerService.HintSize="580.8,1289.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="ea783b2c-6f9d-44ed-b8d7-bc0a2881d284" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="542.4,1072.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="a" />
+              <Variable x:TypeArguments="x:String" Name="fileBlank" />
+              <Variable x:TypeArguments="x:String" Name="filePath" />
+              <Variable x:TypeArguments="x:String" Name="fileOriginName" />
+              <Variable x:TypeArguments="x:String" Name="fileExt" />
+              <Variable x:TypeArguments="x:String" Name="DOCU_GATE_API_URL" />
+              <Variable x:TypeArguments="x:String" Name="docuGateUrl" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="480,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[DOCU_GATE_API_URL]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">["https://dxviewer.bizinfo.go.kr:8787" + "/DG_viewer/viewer/document/docviewer.do"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="onclick" DisplayName="Get Attribute '바로보기'" sap:VirtualizedContainerService.HintSize="480,208" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[fileBlank]" ScopeIdentifier="ea783b2c-6f9d-44ed-b8d7-bc0a2881d284" Version="V3">
+              <uix:NGetAttributeGeneric.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bizinfo.go.kr/web/lay1/bbs/S1T175C112/AK/61/list.do" CvElementArea="444, 839, 122, 49" CvTextArea="478, 853, 55, 16" CvTextArgument="B2H7I" CvType="Button" DesignTimeRectangle="447, 842, 117, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'바로보기'" FullSelectorArgument="&lt;webctrl aaname='바로보기' parentid='container' tag='A' href='javascript:fn_viewCount(78025,&amp;apos;228&amp;apos;,&amp;apos;개인별 연간 근태기록표(결근 휴가)&amp;apos;);' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='바로보기' parentid='container' tag='A' href='javascript:fn_viewCount(78025,&amp;apos;228&amp;apos;,&amp;apos;개인별 연간 근태기록표(결근 휴가)&amp;apos;);' type='' class='basic-btn01 btn-gray-bd mr_10' check:text='바로보기' /&gt;" Guid="87a772af-bdc5-4a9c-afe9-5b3b5e7062d4" InformativeScreenshot="83fefcf404804a796596a7174e44f7b4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='기업마당&amp;gt;활용정보&amp;gt;기업업무용 서식' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="844, 385, 227, 38" CvTextArgument="718890 AA" CvType="Text" DesignTimeRectangle="209, 379, 1500, 49" ElementType="Text" FriendlyName="'기업업무용 서식'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='sub_top_title' aaname='기업업무용 서식' check:innerText='기업업무용 서식' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetAttributeGeneric.Target>
+            </uix:NGetAttributeGeneric>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="480,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[fileBlank.split("'"c)(1)+fileBlank.split("'"c)(3)+fileBlank.split("'"c)(5)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[fileOriginName]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[fileBlank.split("'"c)(7)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="480,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[filePath.Replace("&amp;","%26").Replace("+","%2B")]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[fileExt]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[System.IO.Path.GetExtension(fileOriginName)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <Assign sap:VirtualizedContainerService.HintSize="480,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[docuGateUrl]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[DOCU_GATE_API_URL + "?filepath=" + filepath.Replace("/webapp/upload", "") + "&amp;viewerSelect=image&amp;fileext=" + fileExt + "&amp;filename=" + Uri.EscapeDataString(fileOriginName)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="480,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[docuGateUrl]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACwSURBVDhPY8AFnkor/38jo4KBodL4ATaNyBiqDDuAKfqcV/z/55bt//++fAXGIDZIDK8hMGd/65v0HxcAyWE15JKkAlgQZAshgNUlMNtBTiUEQGowDIAJgPxLCIDUUN+A21KKYAGyvXBaQh4s8Dk9B6oMN4AFIijcoNohABaQXxtboUoxAc5oBAHk5EtyQkLWjMxGxxjOBgFkDVAhcJjAAhamEZTYoNKoAKfJtAcMDADh5PE01csm6wAAAABJRU5ErkJggg==" InformativeScreenshot="89b8f9921f488b6981cf1ebf37a30639.jpg" Selector="&lt;html app='chrome.exe' title='기업마당&amp;gt;활용정보&amp;gt;기업업무용 서식' /&gt;" Title="기업마당&gt;활용정보&gt;기업업무용 서식" Url="https://www.bizinfo.go.kr/web/lay1/bbs/S1T175C112/AK/61/list.do" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="580.8,1064" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="545.6,985.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js Script '바로보기'" sap:VirtualizedContainerService.HintSize="483.2,251.2" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="ea783b2c-6f9d-44ed-b8d7-bc0a2881d284" ScriptCode="function fileBlank() {&#xA;     var links = document.getElementsByTagName('a');&#xA;&#xA;    for (var i = 0; i &lt; links.length; i++) {&#xA;        var link = links[i];&#xA;        &#xA;        // '바로보기' 텍스트를 가진 링크를 찾기&#xA;        if (link.innerText.includes('바로보기')) {&#xA;            // href 속성에서 인자 값을 추출&#xA;            var match = link.href.match(/javascript:fn_viewCount\(([^)]+)\);/);&#xA;&#xA;            if (match &amp;&amp; match[1]) {&#xA;                // 추출한 인자 값을 배열로 분리&#xA;                var args = match[1].split(',');&#xA;&#xA;                // 주소에 해당하는 인덱스(두 번째 인자) 추출&#xA;                var addressIndex = 1;&#xA;&#xA;                if (args.length &gt; addressIndex) {&#xA;                    // 주소 반환&#xA;                    var address = args[addressIndex].trim().replace(/'/g, '');&#xA;                    return address;&#xA;                }&#xA;            }&#xA;}" Version="V3">
+            <uix:NInjectJsScript.ScriptOutput>
+              <OutArgument x:TypeArguments="x:String">[a]</OutArgument>
+            </uix:NInjectJsScript.ScriptOutput>
+            <uix:NInjectJsScript.Target>
+              <uix:TargetAnchorable BrowserURL="https://www.bizinfo.go.kr/web/lay1/bbs/S1T175C112/AK/61/list.do" CvElementArea="444, 779, 121, 49" CvTextArea="478, 793, 55, 16" CvTextArgument="B2H7I" CvType="Button" DesignTimeRectangle="447, 842, 117, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'바로보기'" FullSelectorArgument="&lt;webctrl aaname='바로보기' parentid='container' tag='A' href='javascript:fn_viewCount(78025,&amp;apos;226&amp;apos;,&amp;apos;개인별 연간 근태기록표(결근 휴가)&amp;apos;);' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='바로보기' parentid='container' tag='A' href='javascript:fn_viewCount(78025,&amp;apos;226&amp;apos;,&amp;apos;개인별 연간 근태기록표(결근 휴가)&amp;apos;);' type='' class='basic-btn01 btn-gray-bd mr_10' check:text='바로보기' /&gt;" Guid="f14e743a-af72-41a3-a22a-228fb9436a3c" InformativeScreenshot="722d9aee0c61427a94d373833615dd8e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='기업마당&amp;gt;활용정보&amp;gt;기업업무용 서식' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                <uix:TargetAnchorable.Anchors>
+                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                    <uix:Target CvTextArea="843, 325, 228, 38" CvTextArgument="71089S AA" CvType="Text" DesignTimeRectangle="209, 379, 1500, 49" ElementType="Text" FriendlyName="'기업업무용 서식'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='sub_top_title' aaname='기업업무용 서식' check:innerText='기업업무용 서식' /&gt;" SearchSteps="FuzzySelector, CV" />
+                  </scg:List>
+                </uix:TargetAnchorable.Anchors>
+              </uix:TargetAnchorable>
+            </uix:NInjectJsScript.Target>
+          </uix:NInjectJsScript>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: NAVER" sap:VirtualizedContainerService.HintSize="483.2,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8665cd9a-95c9-4689-ad3a-c7184e0ac37c" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="449.6,495.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="aaa" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js Script 'SPAN search-btn'" sap:VirtualizedContainerService.HintSize="387.2,251.2" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="8665cd9a-95c9-4689-ad3a-c7184e0ac37c" ScriptCode="[&quot;Function () {&#xA;    var buttonElement = document.querySelector(&quot;+&quot;container&quot;+&quot;);&#xA;&#x9;&#x9;var buttonUrl = buttonElement.href;&#xA;&#xA;buttonUrl;&#xA;}&#xA;}&quot;]" Version="V3">
+                    <uix:NInjectJsScript.ScriptOutput>
+                      <OutArgument x:TypeArguments="x:String">[aaa]</OutArgument>
+                    </uix:NInjectJsScript.ScriptOutput>
+                    <uix:NInjectJsScript.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.naver.com/" DesignTimeRectangle="1081, 272, 31, 31" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN search-btn'" FullSelectorArgument="&lt;webctrl aaname='  검색 ' parentid='sform' parentname='search' tag='BUTTON' type='submit' /&gt;&lt;webctrl id='search-btn' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  검색 ' parentid='sform' parentname='search' tag='BUTTON' type='submit' /&gt;&lt;webctrl id='search-btn' tag='SPAN' type='' class='ico_btn_search' aaname='' /&gt;" Guid="d5c14d6e-776d-41c3-a9b4-84f781d6ac1f" InformativeScreenshot="5bea957e0823c6ac86daebd920106b11.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NAVER' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                    </uix:NInjectJsScript.Target>
+                  </uix:NInjectJsScript>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[aaa.ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIfSURBVFhHxZZPT1NBFMVvcjbGhZv3KVz6aVSgtCoFNm5c+T1IdMnGL2AaIyFGhAoUaANiqUVflRhjQwzGhCY2RrzeqxM603c72znJLzmdN+d03r92CD8WagInokb4Ps8pIXwTkxDCaZVTQujPcUoIX+5xSgifxSSEcHKXU0L4eIej5CXO8mrAlbzM6FVGc3plznrzhXmaDboMCLmYGN1pHtfT8ybjeGY050PZHQml2aDLgPBeziRGZ8rVhbrfX5YvkDPUOcezbjSUZgt9YxC6YmK07QUM//ziG/lDxrvZf1jSrNnpQejI/Yzx9rarK6o7/MrXjuRStktuJJRmzU4PQlvOIMabW67O1vLZGuPQvkqaNTs9CIdiYuzHF6Ca+bTkXCjNmp0ehAN5kGK0brq6yTq/+OlcKM2anR6EfTEx9uwFDC6Gzk2WZs1OD0JLLkWMHfsWVHqPnJsszZqdHoSmmBgNewFZa46X+ivuky3Nmp0ehF15HWJs2a9h1lzgqztlPhicuJGiNGt2ehAaYmJsTljAnuzptkt8vfWAB7/t50GzZqcHYUt+kWLU7Xc8ayz+P/66xJXuYzcaSrOFvjEIm2JibEQWcDlnmp+c1t2RkTQbdBkQ6vJTGmNdXpdX8q8WIP+EG3IJL+dJmY6Nz9Os32VAWBeTEMKa7EwSQngpe7OEEF6ISQhhVfbnCSGsiEkI4bnsXhNCeFatCZyGau0vnrb5PVYj75UAAAAASUVORK5CYII=" InformativeScreenshot="9b95d41352f35f730d927982cf131c4f.jpg" Selector="&lt;html app='msedge.exe' title='NAVER' /&gt;" Title="NAVER" Url="https://www.naver.com/" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="92f6eed2-1555-462c-972a-8625c8c7e408" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='새 열 0 Url' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="334, 236, 1200, 62" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl parentid='menu' tag='UL' /&gt;" Guid="d2e879d6-2671-451c-8ce9-9778e941525b" InformativeScreenshot="f975fc81e81aede5e350e8f8eb9ed36c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='거래상위 종목 : 네이버페이 증권' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQwSURBVFhHxZdvTFtVGMZbIHwwiy66L87EjJmIOrP4QT/NDzJHdDFzuCzAMLpsTpMlm5lkLsaZTRO3yDQWZc5tGQ4XS8iGEoMflow5aKGDrggyaXGsWDbkTyml9M/t5fb2Pr7vWZEiJbZQ4E2etPRenud333N6eo6OC8CUHieVkRwkmZSuYi/2ZG/OEHnx4XpSAekmSSMtVrE3Z3AWZ/4L8BrJTVqq4izOFAC5pC7SUhdn5jIAj8titn2u4swyBrCLP5en7AyQztmeaskMsDhFDa6/bcHBptP4wHwWH1u+h8s3FLs4XSkBaJoGp28QI6Hx2CdzlxbVYLhxCVnlm6Az5OHJ8zvh8g7Grk5X0gCTqgKjowHrLuxC3qVSXP7LCkWNxK7OLK/kxwlrDR49V4RMw4vQGzbiQEMFFEURDxFfSQGMhnz40HwOK09tQZZhE5luxKrTBaK98W1lc+uQAwU/f4Tsr/LxQMUreLu+DNtqD+NKrxWaGk0doMvtxFYy5FY+fGobjjVW4XDDGfE+g0Ceq96Liz3XMBwYw8mOOqytLIH+yzw8c/4tVP92GeO+cQyNuRGQgohGozHX6ZoTIKKq+OmWCU9f2C0Mn616B790mxH0BxAgXelpxeaa95FNHeHOMMh9FS9jxdebsaf+M/wx0AtFkkX3Wsf/hBSRZz09V0IASZFxvM2Ih77diuzyfJTUfXLPMDxJE9CLMWkCkbCCQc8IPjcbkXOmmCBfwFOVb+I7Wz09tQ8ReRKdvj4UOcqxvvMQ+qXRmPvMSgjQ4+nH6rPbserkq/i0qQojXo8Ib/Y68FL3cRQ4voDJa4csy5BDEizOThyj+9r77eKpJ6QAKgeu4gnbe9C1FCGnfT+cQZorsxuQGODmiBP5NaWo7foVoWAIwXAIVYPX8Fj7u9BZioUese3FUddF3Am6ocoKFHpifu329WO3/RusaH4DenMR9C3FWGvbj9sB+gomMwQ8Tt7QBJzuu9RGanNwDIf6fsD9bbugv74DmddLhPh9Fr1u6DqCOncbPDQs1QMmrG8thb6xEBkm+go27xAAOQzgTwGAZ6umauiY6MMW+wkKeh0ZceHx4m48aN2D538/gpVNO6G/uh2ZjRRuKp4fAJcaVVE3asW6joPQU0Ci4HgxHINkWAiSgxcKcDfsEeE6CxklCPxftRCIeRpAzIGkAegenjBrbPtmjPm8RB2Z6kCv/+8kAehHhG9eQ/+0YACSniDYKyWAW+kEII95AqRhCEj3APYJzyTngAaXfxi5Nw7QKlZIooVnQSoUXq7A8JwAM7ZkvA5Ichi1d5pxtNu4cNmN+JG8wpNh4f2fEluyGZtSvkmlX0JeBeVQGOGgRArNU5LwYC/2TAAgNqWztuVTq2EkEkmLxMo6O5w/ENvyZT+YsJb1aMZavsNp3AmZtcTHc53uH8lRzX8mKHzVAAAAAElFTkSuQmCC" InformativeScreenshot="6565aac3809aad7686b1c28427a62ef0.jpg" Selector="&lt;html app='msedge.exe' title='거래상위 종목 : 네이버페이 증권' /&gt;" Title="거래상위 종목 : 네이버페이 증권" Url="https://finance.naver.com/sise/sise_quant.naver" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
