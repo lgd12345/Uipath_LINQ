@@ -82,6 +82,18 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "확인용.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bro&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "a&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

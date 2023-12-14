@@ -4,6 +4,7 @@
   "description": "js분석해서a태그url추출",
   "main": "Main.xaml",
   "dependencies": {
+    "Selenium.Support": "[4.16.2]",
     "Selenium.WebDriver": "[4.16.2]",
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",

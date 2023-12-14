@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t2F4/gNx2oz1XSw4wLn0JjsfRDiK33LJBw6UY6C62LzIG7pCYhy2bVWeNbzyN1cu5e4MEJCeJGlQFXoDfuz5PA==",
+  "dgSpecHash": "+UxrgHlhvQg80q8mHrk6IoOega7+PjlvyJmczWd/O6hqtN12A0gSe0a+ZdXHef2r3m4GUXcTU4HBMIXZs8HrvA==",
   "success": true,
   "projectFilePath": "D:\\UipathLINQ연습\\js분석해서a태그url추출\\.local\\",
   "expectedPackageFiles": [
@@ -142,6 +142,7 @@
     "C:\\Users\\gdcom\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtime.win.system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0\\runtime.win7-x64.runtime.native.system.io.compression.4.3.0.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\selenium.support\\4.16.2\\selenium.support.4.16.2.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\selenium.webdriver\\4.16.2\\selenium.webdriver.4.16.2.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230906.1\\system.activities.viewmodels.1.0.0-20230906.1.nupkg.sha512",

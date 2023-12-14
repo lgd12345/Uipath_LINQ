@@ -1909,6 +1909,22 @@
           }
         }
       },
+      "Selenium.Support/4.16.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.16.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.16.2": {
         "type": "package",
         "dependencies": {
@@ -7327,6 +7343,22 @@
         },
         "runtime": {
           "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll": {}
+        }
+      },
+      "Selenium.Support/4.16.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.16.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Selenium.WebDriver/4.16.2": {
@@ -14017,6 +14049,20 @@
         "runtimes/aot/lib/netcore50/System.Private.Uri.dll",
         "runtimes/win/lib/netcore50/System.Private.Uri.dll",
         "runtimes/win/lib/netstandard1.0/System.Private.Uri.dll"
+      ]
+    },
+    "Selenium.Support/4.16.2": {
+      "sha512": "xxwbDNUFUQyD9p1qsT2mjqQPADJVXYub1Z+6lzIbqLAqzbnIovo/lBQD2te5ly7OI8HZqU0vNDbi9p2Mxtz3NA==",
+      "type": "package",
+      "path": "selenium.support/4.16.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.16.2.nupkg.sha512",
+        "selenium.support.nuspec"
       ]
     },
     "Selenium.WebDriver/4.16.2": {
@@ -21147,6 +21193,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
+      "Selenium.Support >= 4.16.2 <= 4.16.2",
       "Selenium.WebDriver >= 4.16.2 <= 4.16.2",
       "UiPath.Excel.Activities >= 2.22.3 <= 2.22.3",
       "UiPath.Mail.Activities >= 1.21.1 <= 1.21.1",
@@ -21169,6 +21216,11 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "dependencies": {
+          "Selenium.Support": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[4.16.2, 4.16.2]"
+          },
           "Selenium.WebDriver": {
             "include": "Runtime",
             "target": "Package",

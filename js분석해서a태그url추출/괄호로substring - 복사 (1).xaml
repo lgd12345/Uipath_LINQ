@@ -97,7 +97,7 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="시퀀스" sap:VirtualizedContainerService.HintSize="477.6,369.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="시퀀스" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="Browser1" />
     </Sequence.Variables>
@@ -106,12 +106,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="try{&#xD;&#xA;&#x9;IWebDriver driver = new ChromeDriver();&#xD;&#xA;&#xD;&#xA;            // 웹 페이지로 이동합니다.&#xD;&#xA;            driver.Navigate().GoToUrl(&quot;https://www.bizinfo.go.kr/web/lay1/bbs/S1T175C112/AK/61/list.do&quot;);&#xD;&#xA;&#xD;&#xA;            // JavaScript 함수를 호출합니다.&#xD;&#xA;            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)driver;&#xD;&#xA;            string script = &quot;return fileBlank('/webapp/upload/forms/2023/files' + '/' + '100390892_2023_1.hwp', '100390892_개인별연간근태기록표결근휴가.hwp');&quot;;&#xD;&#xA;            string result = jsExecutor.ExecuteScript(script).ToString();&#xD;&#xA;&#x9;&#x9;&#x9;driver.Quit();&#xD;&#xA;}catch(Exception ex){&#xD;&#xA;&#x9;System.Console.WriteLine(&quot;에러&quot;+ex.Message);&#xD;&#xA;}" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="415.2,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_4" Language="CSharp">
-      <ui:InvokeCode.Arguments>
-        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:InvokeCode.Arguments>
-    </ui:InvokeCode>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 기업마당&gt;활용정보&gt;기업업무용 서식" sap:VirtualizedContainerService.HintSize="415.2,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ea783b2c-6f9d-44ed-b8d7-bc0a2881d284" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 기업마당&gt;활용정보&gt;기업업무용 서식" sap:VirtualizedContainerService.HintSize="387.2,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ea783b2c-6f9d-44ed-b8d7-bc0a2881d284" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
