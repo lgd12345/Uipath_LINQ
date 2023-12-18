@@ -4096,7 +4096,7 @@
           "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
         }
       },
-      "UiPath.CodedWorkflows/23.10.0": {
+      "UiPath.CodedWorkflows/23.10.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -9454,7 +9454,7 @@
           "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
         }
       },
-      "UiPath.CodedWorkflows/23.10.0": {
+      "UiPath.CodedWorkflows/23.10.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
@@ -19628,10 +19628,10 @@
         "uipath.activities.runtimegovernance.nuspec"
       ]
     },
-    "UiPath.CodedWorkflows/23.10.0": {
-      "sha512": "nZcxFzlI67IrkyrdWD5T0dX8JLTmi9euy0mQ0hrJOgIACC2UH7f78Us3I3EOlErU43cdo6ASJu9kPGOeu+Wuag==",
+    "UiPath.CodedWorkflows/23.10.2": {
+      "sha512": "m+BelgPDzvJdToT+s2ZPp9SmUh6nHoV3Y6IxtGyZlJTEJBjxAFB89sf6ESj4dEfvtCjjVks2eq6iWJkXWSjs8g==",
       "type": "package",
-      "path": "uipath.codedworkflows/23.10.0",
+      "path": "uipath.codedworkflows/23.10.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -19663,7 +19663,7 @@
         "lib/net6.0/tr/UiPath.CodedWorkflows.resources.dll",
         "lib/net6.0/zh-CN/UiPath.CodedWorkflows.resources.dll",
         "lib/net6.0/zh-TW/UiPath.CodedWorkflows.resources.dll",
-        "uipath.codedworkflows.23.10.0.nupkg.sha512",
+        "uipath.codedworkflows.23.10.2.nupkg.sha512",
         "uipath.codedworkflows.nuspec"
       ]
     },
@@ -21500,6 +21500,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
+      "UiPath.CodedWorkflows >= 23.10.2 <= 23.10.2",
       "UiPath.Excel.Activities >= 2.22.3 <= 2.22.3",
       "UiPath.Mail.Activities >= 1.21.1 <= 1.21.1",
       "UiPath.System.Activities >= 23.10.3 <= 23.10.3",
@@ -21522,6 +21523,11 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "dependencies": {
+          "UiPath.CodedWorkflows": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[23.10.2, 23.10.2]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",

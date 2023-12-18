@@ -2,8 +2,9 @@
   "name": "오케스트레이터API",
   "projectId": "49fde8b8-cef4-4787-8989-229cf881fcab",
   "description": "오케스트레이터API",
-  "main": "Main.xaml",
+  "main": "Main dic으로 가져오기.xaml",
   "dependencies": {
+    "UiPath.CodedWorkflows": "[23.10.2]",
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[23.10.3]",
@@ -51,8 +52,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "5f3ab89e-942f-43f5-8c0a-30ec9e557ab4",
+      "filePath": "Main dic으로 가져오기.xaml",
+      "uniqueId": "9176efc6-9110-4db5-b011-f7ec37a6388e",
       "input": [],
       "output": []
     }
