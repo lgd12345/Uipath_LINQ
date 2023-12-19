@@ -14,13 +14,13 @@ using UiPath.UIAutomationNext.API.Models;
 using UiPath.UIAutomationNext.Enums;
 using UiPath.CodedWorkflows.DescriptorIntegration;
 
-namespace 오케스트레이터API
+namespace mlSkill엑티비티
 {
     public partial class CodedWorkflow : CodedWorkflowBase
     {
         public CodedWorkflow()
         {
-            _ = new System.Type[]{typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService)};
+            _ = new System.Type[]{typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService)};
         }
 
         protected UiPath.Core.Activities.API.ISystemService system { get => serviceContainer.Resolve<UiPath.Core.Activities.API.ISystemService>(); }
@@ -31,14 +31,14 @@ namespace 오케스트레이터API
     }
 }
 
-namespace 오케스트레이터API.ObjectRepository
+namespace mlSkill엑티비티.ObjectRepository
 {
     public static class Descriptors
     {
     }
 }
 
-namespace 오케스트레이터API._Implementation
+namespace mlSkill엑티비티._Implementation
 {
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {

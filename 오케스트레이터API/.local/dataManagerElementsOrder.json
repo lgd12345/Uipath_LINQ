@@ -21,6 +21,34 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "jobject jArray으로 가져오기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StatusCode&Sequence_1",
+        "Resp&Sequence_1",
+        "RespHdr&Sequence_1",
+        "OdataResp&Sequence_2",
+        "MyFolders&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main dic으로 가져오기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "StatusCode&Sequence_1",
+        "Resp&Sequence_1",
+        "RespHdr&Sequence_1",
+        "OdataResp&Sequence_2",
+        "MyFolders&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
