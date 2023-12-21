@@ -1,0 +1,106 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_01송장파일.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IBANCode&Sequence_1",
+        "BankAccount&Sequence_1",
+        "BankName&Sequence_1",
+        "Vendor&Sequence_1",
+        "InvoiceNumber&Sequence_1",
+        "PhoneNumber&Sequence_1",
+        "City&Sequence_1",
+        "Address&Sequence_1",
+        "ArrayText&Sequence_1",
+        "ExtractedText&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_00이미지로내보내기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_01PDF에서이미지추출.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_02pageCount.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intpageC&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_03Join_Merge.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_04_ReadPDF.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_ocr&Sequence_1",
+        "str_pdf&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_05_splitPDF.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "PageCount&Sequence_1",
+        "Counter&Sequence_1",
+        "FileExtension&Sequence_1",
+        "FileName&Sequence_1",
+        "FilePath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_06_URLPDF.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
