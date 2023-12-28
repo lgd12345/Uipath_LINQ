@@ -97,6 +97,30 @@
     {
       "Path": "pdf_06_URLPDF.xaml",
       "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "URL1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "이미지 반으로 자르고 읽기.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "int_con&Sequence_1",
+        "out_text&Sequence_1",
+        "image1&Sequence_1",
+        "Path&Sequence_1",
+        "str_AllFile&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "메모장한글ocr.xaml",
+      "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
