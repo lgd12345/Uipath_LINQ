@@ -17,7 +17,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "pdf_01송장파일.xaml",
+      "Path": "pdf_송장파일.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "IBANCode&Sequence_1",
@@ -121,7 +121,9 @@
     {
       "Path": "메모장한글ocr.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "str_result&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
