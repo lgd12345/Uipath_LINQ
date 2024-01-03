@@ -127,6 +127,26 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "pdf_송장파일01.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractedText&Sequence_1",
+        "ArrayText&Sequence_1",
+        "Address&Sequence_1",
+        "City&Sequence_1",
+        "PhoneNumber&Sequence_1",
+        "InvoiceNumber&Sequence_1",
+        "Vendor&Sequence_1",
+        "BankName&Sequence_1",
+        "BankAccount&Sequence_1",
+        "IBANCode&Sequence_1",
+        "PhoneNumbers&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
