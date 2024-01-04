@@ -1,0 +1,16 @@
+﻿{
+  "Name": "OkButton",
+  "Type": "Element",
+  "TaxonomyType": "엘리먼트",
+  "Id": "5sDa_N4GckqOU6oxeqyELQ",
+  "Reference": "ilbtc8n4xEyEbF1_gU3bIg/5sDa_N4GckqOU6oxeqyELQ",
+  "ParentRef": "ilbtc8n4xEyEbF1_gU3bIg/mxs6DLyGdEG9YSqCKg-qjg",
+  "Created": "2024-01-04T06:29:19.4295756Z",
+  "Updated": "2024-01-04T06:29:25.343093Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

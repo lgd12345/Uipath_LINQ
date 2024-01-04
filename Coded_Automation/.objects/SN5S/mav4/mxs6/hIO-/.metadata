@@ -1,0 +1,16 @@
+﻿{
+  "Name": "OrderTab",
+  "Type": "Element",
+  "TaxonomyType": "엘리먼트",
+  "Id": "hIO-ieb2WEynjdhBOSzYRw",
+  "Reference": "ilbtc8n4xEyEbF1_gU3bIg/hIO-ieb2WEynjdhBOSzYRw",
+  "ParentRef": "ilbtc8n4xEyEbF1_gU3bIg/mxs6DLyGdEG9YSqCKg-qjg",
+  "Created": "2024-01-04T06:27:07.8434685Z",
+  "Updated": "2024-01-04T08:39:06.6633818Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

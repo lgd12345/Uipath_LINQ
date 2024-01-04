@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ATZNpE7H_0m6d4x1qZQlgQ" Reference="ilbtc8n4xEyEbF1_gU3bIg/hIO-ieb2WEynjdhBOSzYRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="164, 64, 60, 22" DesignTimeScaleFactor="1.25" ElementType="TabPage" FriendlyName="'Other'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;ctrl name='Other' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;ctrl name='Other' role='page tab' automationid='' check:text='Other' /&gt;" Guid="e9d7384b-1fca-4867-a40c-a4a43da09598" ScopeSelectorArgument="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="81186f1e950b6ebd377deae8d22ad42b.png" xmlns="">0bgf80h7E0EWn9M7bnvkJRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

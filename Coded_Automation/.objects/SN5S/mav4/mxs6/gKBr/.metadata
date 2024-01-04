@@ -1,0 +1,16 @@
+﻿{
+  "Name": "LastName",
+  "Type": "Element",
+  "TaxonomyType": "엘리먼트",
+  "Id": "gKBr-aKqWEORdbIH2pjxig",
+  "Reference": "ilbtc8n4xEyEbF1_gU3bIg/gKBr-aKqWEORdbIH2pjxig",
+  "ParentRef": "ilbtc8n4xEyEbF1_gU3bIg/mxs6DLyGdEG9YSqCKg-qjg",
+  "Created": "2024-01-04T06:19:54.4328619Z",
+  "Updated": "2024-01-04T06:20:01.6824802Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="E_VF4SPr0E-cPQDTJ4sVrA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="108, 94, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='2' title='확인' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='확인' check:text='unchecked' /&gt;" Guid="75e94cd6-a5dd-4a50-bc8f-df99743295d5" ScopeSelectorArgument="&lt;wnd app='mycrm.exe' cls='#32770' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c52e61ea70a8e22f227d684fec95cecf.png" xmlns="">0uP7ZNqLW7UGLYnN7jiwCuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
