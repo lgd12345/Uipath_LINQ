@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Select Item",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "i2K_UZA800eq0YEFgCE_uw",
+  "Reference": "ilbtc8n4xEyEbF1_gU3bIg/i2K_UZA800eq0YEFgCE_uw",
+  "ParentRef": "ilbtc8n4xEyEbF1_gU3bIg/7BxlAV7DwUS4FnksbVZbiQ",
+  "Created": "2024-01-05T01:24:52.6582605Z",
+  "Updated": "2024-01-05T01:29:47.7520117Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

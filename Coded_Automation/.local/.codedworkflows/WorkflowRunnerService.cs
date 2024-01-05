@@ -45,5 +45,13 @@ namespace Coded_Automation
         {
             var result = _runWorkflowHandler(@"Main.xaml", new Dictionary<string, object>{}, default, default, default);
         }
+
+        /// <summary>
+        /// Invokes the 시퀀스.xaml
+        /// </summary>
+        public void 시퀀스()
+        {
+            var result = _runWorkflowHandler(@"시퀀스.xaml", new Dictionary<string, object>{}, default, default, default);
+        }
     }
 }

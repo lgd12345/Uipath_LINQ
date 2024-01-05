@@ -25,10 +25,14 @@ namespace Coded_Automation
         [Workflow]
         public void Execute()
         {
-            // To start using services, use IntelliSense (CTRL + Space) to discover the available services:
-            // e.g. system.GetAsset(...)
+            // To start using services, use IntelliSense (CTRL + Space) to discover the available services: e.g:
+            // 서비스 사용을 시작하려면 IntelliSense(CTRL + Space)를 사용하여 사용 가능한 서비스를 검색합니다: 예:
+            
+            //  system.GetAsset(...)
 
             // For accessing UI Elements from Object Repository, you can use the Descriptors class e.g:
+            // Object Repository에서 UI Elements에 액세스하는 경우 Descriptors 클래스를 사용할 수 있습니다. 예:
+            
             // var screen = uiAutomation.Open(Descriptors.MyApp.FirstScreen);
             // screen.Click(Descriptors.MyApp.FirstScreen.SettingsButton);
             
