@@ -1,0 +1,199 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104.8,1453.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="545.6,1388.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Main" sap:VirtualizedContainerService.HintSize="483.2,1276.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="67049d20-b517-4cb8-a882-abe1a6c283c6" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="449.6,985.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'FirstName'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="67049d20-b517-4cb8-a882-abe1a6c283c6" Text="A" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="_kaMiVL2pUStCQhFCFnvRw" DesignTimeRectangle="175, 95, 163, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'FirstName'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='textBoxPeopleFirstName' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='textBoxPeopleFirstName' /&gt;" Guid="32f35ea1-f36f-4fbe-b755-8a2bf8daef3e" InformativeScreenshot="9ff35f6514881dd6d8f0a17239f3e4d2.png" IsResponsive="True" Reference="msB6VjQcf0mfedkJHGCPrg/uV58qfxBEUq2gB5Vd5aLwQ" ScopeSelectorArgument="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="72, 95, 33, 17" ElementType="Text" FriendlyName="'FirstName'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='label2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='label2' check:text='Firs&amp;amp;t:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'LastName'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="67049d20-b517-4cb8-a882-abe1a6c283c6" Text="B" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="0PXqaO4XGUiTYUhISkPTWw" DesignTimeRectangle="175, 122, 163, 21" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'LastName'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='textBoxPeopleLastName' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='textBoxPeopleLastName' /&gt;" Guid="dbc73091-e86c-4f3a-87cb-62051596e61c" InformativeScreenshot="e3d1799223227f1d6db2e90cbcdd0380.png" IsResponsive="True" Reference="msB6VjQcf0mfedkJHGCPrg/gKBr-aKqWEORdbIH2pjxig" ScopeSelectorArgument="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="72, 122, 33, 17" ElementType="Text" FriendlyName="'LastName'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='label1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox5' /&gt;&lt;wnd ctrlname='label1' check:text='&amp;amp;Last:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'State'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="OH" ScopeIdentifier="67049d20-b517-4cb8-a882-abe1a6c283c6" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>AL</x:String>
+                  <x:String>AK</x:String>
+                  <x:String>AZ</x:String>
+                  <x:String>AR</x:String>
+                  <x:String>CA</x:String>
+                  <x:String>CO</x:String>
+                  <x:String>CT</x:String>
+                  <x:String>DE</x:String>
+                  <x:String>FL</x:String>
+                  <x:String>GA</x:String>
+                  <x:String>HI</x:String>
+                  <x:String>ID</x:String>
+                  <x:String>IL</x:String>
+                  <x:String>IN</x:String>
+                  <x:String>IA</x:String>
+                  <x:String>KS</x:String>
+                  <x:String>KY</x:String>
+                  <x:String>LA</x:String>
+                  <x:String>ME</x:String>
+                  <x:String>MD</x:String>
+                  <x:String>MA</x:String>
+                  <x:String>MI</x:String>
+                  <x:String>MN</x:String>
+                  <x:String>MS</x:String>
+                  <x:String>MO</x:String>
+                  <x:String>MT</x:String>
+                  <x:String>NE</x:String>
+                  <x:String>NV</x:String>
+                  <x:String>NH</x:String>
+                  <x:String>NJ</x:String>
+                  <x:String>NM</x:String>
+                  <x:String>NY</x:String>
+                  <x:String>NC</x:String>
+                  <x:String>ND</x:String>
+                  <x:String>OH</x:String>
+                  <x:String>OK</x:String>
+                  <x:String>OR</x:String>
+                  <x:String>PA</x:String>
+                  <x:String>RI</x:String>
+                  <x:String>SC</x:String>
+                  <x:String>SD</x:String>
+                  <x:String>TN</x:String>
+                  <x:String>TX</x:String>
+                  <x:String>UT</x:String>
+                  <x:String>VT</x:String>
+                  <x:String>VA</x:String>
+                  <x:String>WA</x:String>
+                  <x:String>WV</x:String>
+                  <x:String>WI</x:String>
+                  <x:String>WY</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable ContentHash="G7gc1-q9wEC8VBvzZx5sBQ" DesignTimeRectangle="175, 293, 102, 20" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'State'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='comboBoxPeopleAddressState' aaname='State:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;wnd ctrlname='tabPagePeople' /&gt;&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='comboBoxPeopleAddressState' aaname='State:' /&gt;" Guid="86b0b095-f3a8-436e-9efb-b9023d376861" InformativeScreenshot="913b0c801ca13072d2ac0d007e0dc1b6.png" Reference="msB6VjQcf0mfedkJHGCPrg/7BxlAV7DwUS4FnksbVZbiQ" ScopeSelectorArgument="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OrderTab'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67049d20-b517-4cb8-a882-abe1a6c283c6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="ATZNpE7H_0m6d4x1qZQlgQ" DesignTimeRectangle="164, 64, 60, 22" DesignTimeScaleFactor="1.25" ElementType="TabPage" FriendlyName="'OrderTab'" FullSelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;ctrl name='Other' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='tabControl1' /&gt;&lt;ctrl name='Other' role='page tab' automationid='' check:text='Other' /&gt;" Guid="e9d7384b-1fca-4867-a40c-a4a43da09598" InformativeScreenshot="81186f1e950b6ebd377deae8d22ad42b.png" Reference="msB6VjQcf0mfedkJHGCPrg/hIO-ieb2WEynjdhBOSzYRw" ScopeSelectorArgument="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" ContentHash="dWYCyUts8kSST45uVNow3Q" FilePath="D:\\UipathLINQ연습\\Coded_Automation\\mycrm.exe" IconBase64="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" InformativeScreenshot="6e2b62a46568117acd9fdbf999adad3c.png" Reference="msB6VjQcf0mfedkJHGCPrg/mxs6DLyGdEG9YSqCKg-qjg" Selector="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;" Title="My CRM (Sample App)" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
