@@ -31,11 +31,11 @@ namespace Coded_Automation
         }
 
         /// <summary>
-        /// Invokes the Workflow.cs
+        /// Invokes the 시퀀스1.xaml
         /// </summary>
-        public void Workflow()
+        public void 시퀀스1()
         {
-            var result = _runWorkflowHandler(@"Workflow.cs", new Dictionary<string, object>{}, default, default, default);
+            var result = _runWorkflowHandler(@"시퀀스1.xaml", new Dictionary<string, object>{}, default, default, default);
         }
 
         /// <summary>
@@ -44,6 +44,14 @@ namespace Coded_Automation
         public void 시퀀스()
         {
             var result = _runWorkflowHandler(@"시퀀스.xaml", new Dictionary<string, object>{}, default, default, default);
+        }
+
+        /// <summary>
+        /// Invokes the Workflow.cs
+        /// </summary>
+        public void Workflow()
+        {
+            var result = _runWorkflowHandler(@"Workflow.cs", new Dictionary<string, object>{}, default, default, default);
         }
 
         /// <summary>
